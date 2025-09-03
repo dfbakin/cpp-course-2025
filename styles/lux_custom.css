@@ -1,0 +1,93 @@
+/*-- scss:rules --*/
+
+/* —————————————————————————————
+   Theme Variables
+————————————————————————————— */
+:root {
+  --bg-primary:    #faf9f6; /* off‑white */
+  --bg-secondary:  #ffffff; /* pure white */
+  --text-primary:  #333333; /* charcoal */
+  --text-secondary:#555555; /* medium gray */
+
+  --accent-1:      #daa438; /* soft gold */
+  --accent-2:      #f08a5d; /* muted coral */
+  --accent-3:      #8e8d8a; /* stone gray */
+
+  --shadow-light:  rgba(0,0,0,0.05);
+  --shadow-heavy:  rgba(0,0,0,0.1);
+}
+
+html, body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.lectures-container {
+  display: flex; flex-direction: column;
+  gap: 1.5rem; padding: 2rem;
+}
+
+.lecture-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px var(--shadow-light);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.lecture-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px var(--shadow-heavy);
+  border-color: var(--accent-2);
+}
+
+.lecture-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: var(--accent-2);
+}
+
+.lecture-desc {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.resource-group {
+  margin: 0.75rem 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.link {
+  color: var(--accent-1);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 2px;
+  background: var(--accent-2);
+  transition: width 0.3s;
+}
+
+.link:hover {
+  color: var(--accent-2);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .lectures-container { padding: 1rem; }
+  .lecture-card { padding: 1.25rem; }
+}

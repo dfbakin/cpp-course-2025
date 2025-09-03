@@ -1,0 +1,18 @@
+- title: Вступление
+  number: 1
+  description: Генерация строк, перестановок
+  links:
+    - text: Группа 1
+      href: https://contest.yandex.ru/contest/75139/enter/
+      deadline: 2024-02-05T23:59:59
+    - text: Группа 2
+      href: https://contest.yandex.ru/contest/74920/enter/
+      deadline: 2024-02-05T23:59:59
+    - text: Группа 3
+      href: https://contest.yandex.ru/contest/74921/enter/
+      deadline: 2024-02-08T23:59:59
+    - text: Группа 4
+      href: https://contest.yandex.ru/contest/74921/enter/
+      deadline: 2024-02-08T23:59:59
+  updates:
+    - text: "01-02-2024: Условие задачи A обновлено"

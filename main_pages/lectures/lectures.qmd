@@ -1,0 +1,14 @@
+---
+title: Лекции
+subtitle: "Все ссылки и материалы курса"
+description-meta: "Ссылки и материалы курса 'Программирование на C++' для Лицея НИУ ВШЭ"
+listing:
+  - id: lectures
+    contents:
+      - lectures.yaml
+    template: lectures_links_template.ejs
+    page-size: 50
+---
+
+:::{#materials}
+:::

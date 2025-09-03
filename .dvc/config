@@ -1,0 +1,5 @@
+[core]
+    remote = public
+    autostage = true
+['remote "public"']
+    url = https://dfbakin-public-bucket.storage.yandexcloud.net/dvc_cpp24/

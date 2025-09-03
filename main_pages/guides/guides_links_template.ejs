@@ -1,0 +1,21 @@
+```{=html}
+<div class="lectures-container">
+  <% items.forEach(item => { %>
+    <article class="lecture-card">
+      <header>
+        <h3><%= item.title %></h3>
+        <% if (item.description) { %>
+          <p class="lecture-desc"><%= item.description %></p>
+        <% } %>
+      </header>
+
+      <% if (item.material) { %>
+        <section class="lecture-resources">
+          <a href="<%= item.material %>" class="link">Материал</a>
+        </section>
+      <% } %>
+    </article>
+  <% }); %>
+</div>
+
+```

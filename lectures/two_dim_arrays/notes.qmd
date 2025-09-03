@@ -1,0 +1,135 @@
+---
+title: "Двумерные массивы"
+format:
+  html:
+    math: true
+    page-layout: full
+---
+
+# Вложенные `std::vector<T>`
+
+Вложенными векторами мы будем называть векторы из векторов, то есть объекты типа `std::vector<std::vector<int>>`. Это вектор, элементами которого являются векторы, а их элементами являются числа.
+
+Например:
+
+```C++
+#include <iostream>
+#include <vector>
+
+int main() {
+    const std::vector<std::vector<int>> data = {{1, 2, 3},
+                                                {4, 5, 6},
+                                                {7, 8, 9}};
+    std::cout << data[0][0] << ' ' << data[1][1] << ' ' << data[2][2] << '\n';
+    // 1 5 9
+}
+```
+
+Так работает индексация в двумерном векторе:
+
+
+![Индексация в двумерном векторе: сначала получаем ряд, потом элемент в этом ряду](/resources//images/two_dim_array_indices.png)
+Индексация в двумерном векторе: сначала получаем ряд, потом элемент в этом ряду
+
+
+![Двумерный вектор из примера выше](/resources//images/square_matrix.png)
+Двумерный вектор из примера выше
+
+Создадим двумерный вектора и выведем его элементы. Затем выведем только его диагональ.
+
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    size_t m, n;
+    std::cin >> m >> n;  // число строк и столбцов
+
+    // создаём матрицу matrix из m строк
+    std::vector<std::vector<int>> matrix(m);
+    // std::vector<std::vector<int>> matrix(m, std::vector<int>(n));
+
+    for (size_t i = 0; i < m; ++i) {
+        matrix[i].resize(n); // эта строка не нужна, если вложенные векторы изначально были созданы непустыми
+        for (size_t j = 0; j < n; ++j) {
+            std::cin >> matrix[i][j];
+        }
+    }
+    // тип matrix[i] -- это std::vector<int> -- как и раньше,
+    //переходим к элементу вектора по индексу
+
+    // напечатаем матрицу, выводя элементы через табуляцию
+    for (size_t i = 0; i < m; ++i) {
+        for (size_t j = 0; j < n; ++j) {
+            std::cout << matrix[i][j] << '\t'; // сначала индекс строки, затем индекс элемента в этой строке
+        }
+        std::cout << '\n';
+    }
+    std::cout << '\n';
+
+    // элементы на диагонале обладают равными индексами (см. иллюстрации выше)
+    for (size_t i = 0; i < std::min(n, m); ++i) {
+        std::cout << matrix[i][i] << ' ';
+    }
+    std::cout << '\n';
+}
+```
+
+Вывод программы выше, если будет введена квадратная матрица из примера выше:
+
+```
+1 2 3
+4 5 6
+7 8 9
+
+1 5 9
+```
+
+
+
+Напишем функцию, которая будет получать по константной ссылке двумерный вектор чисел и возвращать наибольшее значение. Главное, что здесь нужно отметить -- перебор всех элементов почти не изменился от того, что было рассмотрено в прошлых главах.
+
+```C++
+#include <iostream>
+#include <vector>
+
+int findMaxValue(const std::vector<std::vector<int>>& matrix) {
+    int maxValue = matrix[0][0];
+    // во время изучения рекомендуется явно писать даже сложные типы и не использовать тип auto
+    for (const std::vector<int>& row : matrix) {
+        for (const int& num : row) {
+            if (num > maxValue) {
+                maxValue = num;
+            }
+        }
+    }
+    return maxValue;
+}
+
+int main() {
+    std::vector<std::vector<int>> matrix = {{1, 5, 3}, {8, 2, 6}, {4, 9, 7}};
+
+    int maxVal = findMaxValue(matrix);
+    std::cout << maxVal << '\n';  // 9
+}
+```
+
+Можно аналогично реализовать функцию поиск наибольшего значения в двумерном векторе с использование обращения по индексу:
+
+```C++
+int findMaxValue(const std::vector<std::vector<int>>& matrix) {
+    int maxValue = matrix[0][0];
+    for (size_t i = 0; i < matrix.size(); ++i) {
+        for (size_t j = 0; j < matrix[i].size(); j++) {
+            if (matrix[i][j] > maxValue) {
+                maxValue = matrix[i][j];
+            }
+        }
+    }
+
+    return maxValue;
+}
+```
+
+В домашнем задании буду задачи на обход двумерных векторов для поиска максимального значения при соблюдении разных условий

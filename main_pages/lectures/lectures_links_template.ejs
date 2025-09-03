@@ -1,0 +1,43 @@
+```{=html}
+<div class="lectures-container">
+  <% items.forEach(item => { %>
+    <article class="lecture-card">
+      <header>
+        <h3>Занятие <%= item.number %>: <%= item.title %></h3>
+        <% if (item.description) { %>
+          <p class="lecture-desc"><%= item.description %></p>
+        <% } %>
+      </header>
+
+      <section class="lecture-resources">
+        <% const docs = [];
+           if (item.presentation) docs.push(`<a href="${item.presentation}" class="link">Презентация</a>`);
+           if (item.material)    docs.push(`<a href="${item.material}" class="link">Конспект</a>`);
+        %>
+        <% if (docs.length) { %>
+          <div class="resource-group">
+            <strong>Документы:</strong> <%= docs.join(' • ') %>
+          </div>
+        <% } %>
+
+        <% const vids = [];
+           if (item.youtube)     vids.push(`<a href="${item.youtube}" class="link">YouTube</a>`);
+           if (item.gdrive)      vids.push(`<a href="${item.gdrive}" class="link">Google Drive</a>`);
+           if (item.s3_download_link) vids.push(`<a href="${item.s3_download_link}" class="link">Скачать с S3</a>`);
+        %>
+        <% if (vids.length) { %>
+          <div class="resource-group">
+            <strong>Видео:</strong> <%= vids.join(' • ') %>
+          </div>
+        <% } %>
+
+        <% if (item.quiz) { %>
+          <div class="resource-group">
+            <strong>Задание:</strong> <a href="<%= item.quiz %>" class="link">Квиз</a>
+          </div>
+        <% } %>
+      </section>
+    </article>
+  <% }); %>
+</div>
+```

@@ -1,0 +1,110 @@
+- title: Переменные, ввод-вывод, операции
+  number: 1
+  description: Переменные, ввод-вывод, операции
+  material: /lectures/io_variables/notes.html
+  presentation: /lectures/io_variables/presentation.pdf
+
+# - title: Условия, ветвление, отладка
+#   number: 2
+#   description: Условия, ветвление, отладка
+#   material: /lectures/conditions/notes.html
+
+# - title: Циклы
+#   number: 3
+#   description: Циклы
+#   material: /lectures/cycles/notes.html
+
+# - title: Работа с std::vector
+#   number: 4
+#   description: Работа с std::vector
+#   material: /lectures/std_vector/notes.html
+
+# - title: O-нотация. Теория чисел
+#   number: 5
+#   description: O-нотация. Теория чисел
+#   material: /lectures/complexity_prime_numbers/notes.html
+
+# - title: Ссылки, указатели, работа с памятью
+#   number: 6
+#   description: Ссылки, указатели, работа с памятью
+#   material: /lectures/ref_ptr_files/notes.html
+
+# - title: Функции
+#   number: 7
+#   description: Функции
+#   material: /lectures/functions/notes.html
+
+# - title: Константность. Структуры
+#   number: 8
+#   description: Константность. Структуры
+#   material: /lectures/const_structures/notes.html
+
+# - title: STL --- 1
+#   number: 9
+#   description: STL --- 1
+#   material: /lectures/stl_1/notes.html
+
+# - title: STL --- 2
+#   number: 10
+#   description: STL --- 2
+#   material: /lectures/stl_2/notes.html
+
+# - title: Сортировки. Компараторы
+#   number: 11
+#   description: Сортировки. Компараторы
+#   material: /lectures/sort_compare_funcs/notes.html
+
+# - title: Рекурсия
+#   number: 12
+#   description: Рекурсия
+#   material: /lectures/recursion/notes.html
+
+# - title: Строки --- 1
+#   number: 13
+#   description: Строки --- 1
+#   material: /lectures/strings_1/notes.html
+
+# - title: Строки --- 2
+#   number: 14
+#   description: Строки --- 2
+#   material: /lectures/strings_2/notes.html
+
+# - title: Строки --- 3
+#   number: 15
+#   description: Строки --- 3
+#   material: /lectures/strings_3/notes.html
+
+# - title: Приближенное решение задач
+#   number: 16
+#   description: Приближенное решение задач
+#   material: /lectures/approx_math/notes.html
+
+# - title: Геометрия -- 1
+#   number: 17
+#   description: Геометрия -- 1
+#   material: /lectures/geometry_1/notes.html
+
+# - title: Геометрия -- 2
+#   number: 18
+#   description: Геометрия -- 2
+#   material: /lectures/geometry_2/notes.html
+
+# - title: Бинарный поиск
+#   number: 18
+#   description: Бинарный поиск
+#   material: /lectures/binary_search/notes.html
+
+# - title: Двумерные массивы
+#   number: 19
+#   description: Двумерные массивы
+#   material: /lectures/two_dim_arrays/notes.html
+
+# - title: Алгоритмы сортировки
+#   number: 20
+#   description: Алгоритмы сортировки
+#   material: /lectures/sorting_algorithms/notes.html
+
+# - title: (Бонус) Стек
+#   number: 21
+#   description: (Бонус) Стек
+#   material: /lectures/stack/notes.html

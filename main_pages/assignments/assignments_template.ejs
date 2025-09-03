@@ -1,0 +1,54 @@
+```{=html}
+<div class="lectures-container">
+  <% items.forEach(item => { %>
+    <article class="lecture-card">
+      <header>
+        <h3>Задание <%= item.number %>: <%= item.title %></h3>
+        <% if (item.description) { %>
+          <p class="lecture-desc"><%= item.description %></p>
+        <% } %>
+      </header>
+
+      <section class="lecture-resources">
+        <% if (item.links && item.links.length) { %>
+          <div class="resource-group">
+            <strong>Ссылки на группы:</strong>
+            <ul class="links-list">
+              <% item.links.forEach(link => { %>
+                <li class="link-item">
+                  <a href="<%= link.href %>" class="link"><%= link.text %></a>
+                  <% if (link.deadline) { %>
+                    <!-- форматируем дату в стиле "дд.мм.гггг, чч:мм" -->
+                    <span class="deadline">
+                      до <%= new Date(link.deadline)
+                        .toLocaleString('ru-RU', {
+                          day:   '2-digit',
+                          month: '2-digit',
+                          year:  'numeric',
+                          hour:   '2-digit',
+                          minute: '2-digit'
+                        })
+                      %>
+                    </span>
+                  <% } %>
+                </li>
+              <% }); %>
+            </ul>
+          </div>
+        <% } %>
+
+        <% if (item.updates && item.updates.length) { %>
+          <div class="resource-group">
+            <strong>Обновления:</strong>
+            <ul>
+              <% item.updates.forEach(update => { %>
+                <li><%= update.text %></li>
+              <% }); %>
+            </ul>
+          </div>
+        <% } %>
+      </section>
+    </article>
+  <% }); %>
+</div>
+```

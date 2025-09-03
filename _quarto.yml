@@ -1,0 +1,94 @@
+project:
+  type: website
+  output-dir: _site
+
+# Meta
+description-meta: "Intoduction to C++ for HSE Lyceum (2024)"
+author-meta: "Denis Bakin"
+
+website:
+  title: "C++ Course"
+  image: "resources/images/favicon.png"
+  description: "Website of 'Intoduction to C++' for HSE Lyceum (2024)"
+
+  navbar:
+    background: dark
+
+    left:
+      - text: Описание курса
+        href: index.qmd
+      - text: Материалы лекций
+        href: main_pages/lectures/lectures.qmd
+      - text: Задания
+        href: main_pages/assignments/assignments.qmd
+      # - text: Lyceum DMOJ (placeholder)
+      #   href: https://google.com
+        # target: _blank
+      - text: Об авторе
+        href: https://dfbakin.com/
+        target: _blank
+      - text: Гайды
+        href: main_pages/guides/guides.qmd
+
+      # - text: About
+      #   menu:
+      #     - text: News
+      #       href: posts.qmd#category=news
+      #     - text: Events
+      #       href: posts.qmd#category=event
+      #     - text: Contact
+      #       href: contact.qmd
+
+    right:
+      # - icon: code-square
+      #   href: https://google.com
+      #   target: _blank
+      - icon: person-circle
+        href: https://dfbakin.com
+        target: _blank
+      - icon: github
+        href: https://github.com/dfbakin/cpp-course-2024
+        target: _blank
+
+  page-navigation: true
+
+  page-footer:
+    left: "[Denis Bakin](https://github.com/dfbakin/) &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: >
+      Build on [Quart Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)
+      adapted by [Dr. Gang He](http://drganghe.github.io)
+    right:
+      - icon: github
+        href: https://github.com/dfbakin/cpp-course-2024
+        target: _blank
+
+  search:
+    location: navbar
+    type: textbox
+
+  reader-mode: true
+
+  draft-mode: unlinked
+
+  repo-url: https://github.com/dfbakin/cpp-course-2024
+
+  open-graph: true
+
+  twitter-card: true
+
+  site-url: "https://cpp24.dfbakin.com"
+
+format:
+  html:
+    theme:
+      dark: [superhero, styles/superhero_custom.css]
+      light: [lux, styles/lux_custom.css]
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript

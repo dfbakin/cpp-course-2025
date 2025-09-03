@@ -1,0 +1,144 @@
+---
+title: "Строки -- 1"
+format:
+  html:
+    math: true
+    page-layout: full
+---
+
+# Работа со строками
+
+Контейнер `std::string` можно рассматривать как особый случай вектора символов `std::vector<char>`, имеющий [набор дополнительных функций](https://en.cppreference.com/w/cpp/string/basic_string). В частности, у строки есть все те же рассмотренные нами функции, что и у вектора (например, `pop_back` или `resize`). Рассмотрим некоторые специфические функции строки:
+
+```C++
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string s = "Some string";
+
+    // приписывание символов и строк
+    s += ' ';  // добавляем отдельный символ в конец, это аналог push_back
+    s += "functions";  // добавляем строку в конец
+    std::cout << s << "\n";  // Some string functions
+
+    // выделение подстроки
+    // подстрока "string" из 6 символов начиная с 5-й позиции
+    std::string sub1 = s.substr(5, 6);
+    // подстрока "functions" с 12-й позиции и до конца
+    std::string sub2 = s.substr(12);
+
+    // поиск символа или подстроки
+    size_t pos1 = s.find(' ');  // позиция первого пробела, в данном случае 4
+    size_t pos2 = s.find(' ', pos1 + 1);  // позиция следующего пробела (11)
+    size_t pos3 = s.find("str");  // вернётся 5
+    size_t pos4 = s.find("#");  // вернётся std::string::npos
+}
+```
+
+Вставку, замену и удаление подстрок можно сделать через указание индекса начала и длины подстроки:
+
+```C++
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string s = "Some string functions";
+
+    // вставка подстроки
+    s.insert(5, "std::");
+    std::cout << s << "\n";  // Some std::string functions
+
+    // замена указанного диапазона на новую подстроку
+    s.replace(0, 4, "Special");
+    std::cout << s << "\n";  // Special std::string functions
+
+    // удаление подстроки
+    s.erase(8, 5);  // Special string functions
+}
+```
+
+Аналогичные действия для других контейнеров (например, для того же вектора) можно сделать через итераторы. Мы рассмотрим такие примеры в одном из следующих параграфов.
+
+В C++20 появились удобные функции `starts_with` и `ends_with` для проверки префикса или суффикса строк:
+
+```C++
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string phrase;
+    std::getline(std::cin, phrase);
+
+    if (phrase.starts_with("hello")) {
+        std::cout << "Greeting\n";
+    }
+
+    if (phrase.ends_with("bye")) {
+        std::cout << "Farewell\n";
+    }
+}
+```
+
+# Нестандартный ввод строк
+
+## Бесконечный ввод
+
+Одна из основных концепций Unix-подобных система -- "everything is a file", то есть унифицированный доступ к самым разным объектам, в которые что-то можно писать, из которых можно что-то читать одними и теми же функциями. Например, датчик можно представить как бесконечный файл, из которого можно читать данные, потоки ввода и вывода -- так же как бесконечные файлы, для которых доступны привычные операции, но неизвестен размер. Часто возникает понятная необходимость: прочитать все переменные до конца файла, но как поступить, если та же задача стоит при чтении из потока ввода? Оказывается, что в конце каждого файла можно получиться символ-значение EOF -- "end of file", его же можно отправить при вводе в консоль, введя комбинацию клавиш `Ctrl+D`
+
+Функция `scanf`, которую мы рассматривали в начале курса и которая пришла в C++ из языка C, возвращает целое беззнаковое число -- количество прочитанных переменных. Если оно не соответствует ожидаемому количеству переменных, то можно сделать вывод, что вывод прошел неуспешно, либо был достигнут конец ввода: EOF из файла или консоли.
+
+```C++
+int day = 0, month = 0, year = 0;
+while(scanf("%d.%d.%d", &day, &month, &year) == 3) {
+    // ...
+}
+```
+
+Похожим образом можно поступить и при чтении из объекта потока (`std::basic_stream` и все производные от этого класса) -- к ним относятся известные нам `std::cin`, `std::ifstream`, `std::stringstream`. Когда мы вызываем у этих объектов оператор `>>`, то он при успешном чтении возвращает `true`.
+
+```C++
+int a = 0, b = 0;
+while(std::cin >> a >> b) {
+    // ...
+}
+```
+
+## Чтение по строкам
+
+```C++
+#include <iostream>
+#include <vector>
+#include <sstream>
+
+int main() {
+    int num = 0;
+    std::vector<int> numbers;
+
+    std::string numbers_line;
+    std::getline(std::cin, numbers_line); // reading line to the end of the line
+    std::stringstream numbers_line_stream(numbers_line); // creating a stream from the line
+
+    while (numbers_line_stream >> num) { // reading numbers from the stream, spliting by space in fact
+        numbers.push_back(num);
+    }
+
+    // same again
+    std::getline(std::cin, numbers_line);
+    numbers_line_stream = std::stringstream(numbers_line);
+
+    while (numbers_line_stream >> num) {
+        numbers.push_back(num);
+    }
+
+    // demo output
+    std::cout << "Entered numbers: ";
+    for (const auto& number : numbers) {
+        std::cout << number << " ";
+    }
+    std::cout << std::endl;
+}
+
+```
+
+В этом случае мы хотим читать "по строкам", а затем уже строку делить на отдельные числа. Читаем по строкам, то есть до символа переноса строки, с помощью `std::getline`. Затем делаем из прочитанной строки объект stream, который поддерживает оператор `>>` с перегрузками во все типы красивые — как уже знакомые нам `std::cin` и `std::cout`. Так делаем 2 раза, если 2 строки. $n$ раз в цикле, если $n$ строк

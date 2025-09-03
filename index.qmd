@@ -1,0 +1,43 @@
+---
+title: "Курс C++ 2024"
+image: "resources/images/profile_pic.png"
+page-navigation: false
+toc: false
+page-layout: full
+
+# listing:
+#   - id: recent-posts
+#     contents:
+#       - posts
+#       - posts/post-links.yml
+#     exclude:
+#       title: ""
+#     type: grids
+#     max-items: 3
+# #    image-height: 150px
+#     page-size: 3 #set same as max-times to remove the page number setting
+#     fields: [image, date, title, subtitle]
+#     max-description-length: 75
+#     sort:
+#       - "date desc"
+#       - "title asc"
+---
+
+Курсы был разработан для 2024-2025 учебного года и охватывает основы программирования на C++, а также алгоритмы начального уровня.
+
+
+## Контакты
+- **Telegram**: [@dfbakin](https://t.me/dfbakin)
+- **Email**: [denis.bakin5@gmail.com](mailto:denis.bakin5@gmail.com)
+- **Сайт**: [dfbakin.com](https://dfbakin.com)
+
+
+<!-- :::
+
+## Recent Posts
+Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+
+:::{#recent-posts}
+:::
+
+<p align="right">[All Posts »](/posts.qmd)</p> -->

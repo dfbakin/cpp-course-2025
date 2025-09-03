@@ -1,0 +1,264 @@
+---
+title: "STL -- 2"
+format:
+  html:
+    math: true
+    page-layout: full
+---
+
+Продолжаем наше знакомство в Standard Template Library (STL).
+
+Вопросы для самопроверки:
+
+- Что такое указатель? Что он в себе хранит? Какие операции с ним можно производить?
+
+- Что такое ссылка? Что он в себе хранит, сколько памяти занимает? Какие операции с ней можно производить?
+
+- Что такое шаблонный метод, шаблонный тип? Как это связано с перегрузками функций, объектов?
+
+- Что такое STL? Что там есть?
+
+- Что такое множество?
+
+- Какие операции может производить `std::unordered_set<T>`? Как утроен внутри? Какова сложность этих операций? Когда его нужно использовать?
+
+- Какие операции может производить `std::set<T>`? Как утроен внутри? Какова сложность этих операций? Когда его нужно использовать?
+
+# Пара std::pair<T1, T2>
+
+Пара -- составной тип, который состоит из двух переменных разных типов.
+
+Все способы создания, модификации и использования пар:
+
+```C++
+#include <iostream>
+#include <tuple>
+#include <algorithm>
+#include <vector>
+#include <string>
+
+int main() {
+    // Creating std::pair
+    std::pair<int, std::string> p1(1, "one");
+    std::pair<int, std::string> p2 = std::make_pair(2, "two");
+    std::pair<int, std::string> p3{3, "three"};
+
+    // Accessing elements
+    std::cout << "p1: " << p1.first << ", " << p1.second << '\n';
+    std::cout << "p2: " << p2.first << ", " << p2.second << '\n';
+    std::cout << "p3: " << p3.first << ", " << p3.second << '\n';
+
+    // Modifying elements
+    p1.first = 10;
+    p1.second = "ten";
+    std::cout << "Modified p1: " << p1.first << ", " << p1.second << '\n';
+
+    // Comparing pairs
+    if (p1 < p2) {
+        std::cout << "p1 is less than p2" << '\n';
+    } else {
+        std::cout << "p1 is not less than p2" << '\n';
+    }
+
+    // Swapping pairs
+    std::swap(p1, p2);
+    std::cout << "After swap, p1: " << p1.first << ", " << p1.second << '\n';
+    std::cout << "After swap, p2: " << p2.first << ", " << p2.second << '\n';
+
+    // Using pairs in a vector
+    std::vector<std::pair<int, std::string>> vec;
+    vec.push_back(p1);
+    vec.push_back(p2);
+    vec.push_back(p3);
+    // std::vector<std::pair<int, std::string>>::iterator it = vec.begin();
+    // Iterating over vector of pairs
+    for (const std::pair<int, std::string>& p : vec) {
+        std::cout << "Vector element: " << p.first << ", " << p.second << '\n';
+    }
+}
+
+```
+
+```
+p1: 1, one
+p2: 2, two
+p3: 3, three
+Modified p1: 10, ten
+p1 is not less than p2
+After swap, p1: 2, two
+After swap, p2: 10, ten
+Vector element: 2, two
+Vector element: 10, ten
+Vector element: 3, three
+```
+
+
+
+Пример создания и поиска пар:
+
+```C++
+#include <iostream>
+#include <tuple>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<std::pair<int, int>> pairs;
+    int a, b;
+    std::cout << "Enter pairs of integers (0 0 to stop): ";
+    while (std::cin >> a >> b && (a != 0 || b != 0)) {
+        pairs.push_back(std::make_pair(a, b));
+        // pairs.emplace_back(a, b);
+    }
+
+    std::cout << "First pair: " << pairs[0].first << " " << pairs[0].second << '\n';
+
+    std::pair<int, int> find;
+    std::cout << "Enter pair to find: ";
+    std::cin >> find.first >> find.second;
+
+    std::vector<std::pair<int, int>>::iterator found_iter = std::find(pairs.begin(), pairs.end(), find);
+    // auto found_iter = std::find(pairs.begin(), pairs.end(), find);
+
+    if (found_iter != pairs.end()) {
+        std::cout << "Pair found: " << found_iter->first << " " << found_iter->second << '\n';
+    } else {
+        std::cout << "Pair not found" << '\n';
+    }
+}
+
+```
+
+```
+Enter pairs of integers (0 0 to stop): 1 2
+2 3
+3 2
+4 5
+0 0
+First pair: 1 2
+Enter pair to find: 3 2
+Pair found: 3 2
+```
+
+
+
+# std::tuple<Args...>
+
+Кортеж (`std::tuple`) -- аналог простой структуры (которая состоит только из переменных) или пары, если бы в ней могло быть несколько значений. Позволяет хранить вместе переменные разных типов и лексикографически сравнивать кортежи. Стоит отметить эту интересную способность кортежей, она нам потребуется чуть позже.
+
+```C++
+#include <iostream>
+#include <tuple>
+
+int main() {
+    // make examples of how to create, change and compare tuples
+    std::tuple<int, std::string, double> t1(1, "hello", 3.14);
+    std::tuple<int, std::string, double> t2(2, "world", 3.14);
+
+    // compare tuples
+    std::cout << "t1 == t2: " << (t1 == t2) << std::endl;
+
+    // change tuple
+    std::get<0>(t1) = 2;
+    std::get<1>(t1) = "world";
+
+    // compare again
+    std::cout << "t1 == t2: " << (t1 == t2) << std::endl;
+    std::cout << "t1 = {" << std::get<0>(t1) << ", \"" << std::get<1>(t1) << "\", " << std::get<2>(t1) << "}\n";
+    // now: t1 == t2 == {2, "hello", 3.14};
+
+    std::cout << "{2, \"world\", 3.14} < {5, \"worlc\", 3.14}: \t" << (t1 < std::make_tuple(5, "worlc", 3.14)) << std::endl;
+    std::cout << "{2, \"world\", 3.14} < {1, \"world\", 3.14}: \t" << (t1 < std::make_tuple(1, "world", 3.14)) << std::endl;
+    std::cout << "{2, \"world\", 3.14} < {2, \"worle\", 3.14}: \t" << (t1 < std::make_tuple(2, "worle", 3.14)) << std::endl;
+    std::cout << "{2, \"world\", 3.14} < {2, \"world\", 3.14}: \t" << (t1 < std::make_tuple(2, "world", 3.15)) << std::endl;
+    std::cout << "{2, \"world\", 3.14} < {2, \"worla\", 100}: \t" << (t1 < std::make_tuple(2, "worla", 100)) << std::endl;
+
+    return 0;
+}
+
+```
+
+```
+t1 == t2: 0
+t1 == t2: 1
+t1 = {2, "world", 3.14}
+{2, "world", 3.14} < {5, "worlc", 3.14}:        1
+{2, "world", 3.14} < {1, "world", 3.14}:        0
+{2, "world", 3.14} < {2, "worle", 3.14}:        1
+{2, "world", 3.14} < {2, "world", 3.15}:        1
+{2, "world", 3.14} < {2, "worla", 100}:         0
+```
+
+Шаблонная функция `std::tie(Args...)`создает кортеж из тех типов, которые ей были переданы. Например:
+`std::tuple<int, double, std::string> variable = std::tie(42, 12.8, "some_line");`
+
+
+
+# Ассоциативный контейнер std::unordered_map<Key, T, Hash, KeyEqual>
+
+Mapping с английского -- соответствие. Этот контейнер так называется, потому что хранит соответствие от ключа к значению (можно провести аналогию со словарем из Python, `dict()`).
+
+- Тип `Key` должен быть хэшируемым (для него должна существовать, либо явно быть передана хэш-функция)
+
+- Ключи должны быть уникальными
+
+- Тип `T` условно любой, в него происходит "отображение" из ключа
+
+- Контейнер хранит в себе *пары* ключ-значение, то есть формально элементы такого контейнера -- это `std::pair<Key, T>`. Если мы будем проходиться по контейнеру, если мы будем получать итератор на один из элементов, то это будет именно *пара*
+
+[Полный референс](https://en.cppreference.com/w/cpp/container/unordered_map)
+
+
+
+Пусть у нас есть указатель или итератор на пару или какую либо структуру. Значит, у элемента такого указателя есть поля. Чтобы получить к ним доступ нужно:
+
+- разыменовать объект: `*ptr`
+
+- у разыменованного объекта получить необходимое поле. Например, второй элемент пары: `(*ptr).second`
+
+Это можно и нужно делать стрелочкой для удобства и читаемости: `ptr->second`
+
+
+
+```C++
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+bool isPositive(const std::string& key, const std::unordered_map<std::string, int>& data) {
+    return data.at(key) > 0;
+    // return data[key] > 0; Compilation Error due to !constant! argument data
+}
+
+int main() {
+    std::unordered_map<std::string, int> data;
+    std::string key;
+    int value;
+
+    while (std::cin >> key >> value) {
+        data[key] = value;  // вставка
+    }
+
+    data.erase("hello");  // удаление
+
+    data["new_key"] = 42;
+    data["new_key"] += 24;
+
+    // поиск
+    std::unordered_map<std::string, int>::iterator iter = data.find("test");
+    if (iter != data.end()) {
+        std::cout << "Found the key " << iter->first << " with the value " << iter->second << "\n";
+    } else {
+        std::cout << "Not found\n";
+    }
+}
+```
+
+```
+one 1
+two 2
+hello 42
+test 42
+^D
+Found the key test with the value 42
+```

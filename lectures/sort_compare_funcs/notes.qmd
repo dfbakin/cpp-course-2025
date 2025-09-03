@@ -1,0 +1,206 @@
+---
+title: "Сортировки. Компараторы"
+format:
+  html:
+    math: true
+    page-layout: full
+---
+
+В одной из начальных глав этого курса мы сортировали элементы вектора в порядке возрастания. В двух последних главах были рассмотрены контейнеры, которые хранят элементы в некотором порядке:
+
+- `std::set` по умолчанию хранит элементы в порядке возрастания значений
+
+- `std::map` по умолчанию хранит пары в порядке возрастания ключей (первых значений пар -- `std::pair<Key, T>::first`)
+
+В обоих случаях это поведение контейнеров по умолчанию, но как же изменить порядок, в котором элементы будут храниться или сортироваться? Здесь потребуются компараторы -- функции или функторы (любой вызываемый объект), который будут сравнить объекты так, как требуется.
+
+Набор элементов $a_1, \dots, a_n$ считаем упорядоченным по функции $f$, если выполняется: $\forall \ 1 \le i < j \le n: f(a_i, a_j) = 1$, то есть "сравнение" объекта, который идет раньше, с объектом, который идет позже, должно быть истинным.
+
+Например, следующий код создает вектор пар (точки на плоскости) и затем сортирует их с использованием компараторов -- функций-сравнения.
+
+```C++
+#include <iostream>
+#include <cstdint>
+#include <vector>
+#include <algorithm>
+
+template<typename T>
+bool customLess(const T& a, const T& b) {
+    return a < b;
+}
+
+template<typename T>
+bool customGreater(const T& a, const T& b) {
+    return a > b;
+}
+
+bool firstCoordOnlyLess(const std::pair<int, int>& a, const std::pair<int, int>& b) {
+    return a.first < b.first;
+}
+
+bool distanceToOriginLess(const std::pair<int, int>& a, const std::pair<int, int>& b) {
+    return a.first * a.first + a.second * a.second < b.first * b.first + b.second * b.second;
+}
+
+void printCoords(const std::vector<std::pair<int, int>>& coords) {
+    for (const auto& coord : coords) {
+        std::cout << "(" << coord.first << ", " << coord.second << ")"
+                  << ", ";
+    }
+    std::cout << "\n\n";
+}
+
+int main() {
+    std::vector<std::pair<int, int>> coords = {
+        {3, 7},
+        {8, 1},
+        {14, 6},
+        {9, 3},
+        {11, 15},
+        {11, 12},
+        {3, 10},
+        {14, 4},
+        {17, 8},
+        {8, 5},
+    };
+
+    std::cout << "Original coords: \n";
+    printCoords(coords);
+
+    std::sort(coords.begin(), coords.end(), firstCoordOnlyLess);
+    std::cout << "Sorted by first coord: \n";
+    printCoords(coords);
+
+    std::sort(coords.begin(), coords.end(), std::less<std::pair<int, int>>());
+    std::cout << "Sorted by built-in less: \n";
+    printCoords(coords);
+
+    std::sort(coords.begin(), coords.end(), customLess<std::pair<int, int>>);
+    std::cout << "Sorted by custom less: \n";
+    printCoords(coords);
+
+    std::sort(coords.begin(), coords.end(), customGreater<std::pair<int, int>>); // std::greater<std::pair<int, int>>()
+    std::cout << "Sorted by custom greater: \n";
+    printCoords(coords);
+
+    std::sort(coords.begin(), coords.end(), distanceToOriginLess);
+    std::cout << "Sorted by distance to origin: \n";
+    printCoords(coords);
+
+    return 0;
+}
+
+```
+
+```
+Original coords:
+(3, 7), (8, 1), (14, 6), (9, 3), (11, 15), (11, 12), (3, 10), (14, 4), (17, 8), (8, 5),
+
+Sorted by first coord:
+(3, 7), (3, 10), (8, 1), (8, 5), (9, 3), (11, 15), (11, 12), (14, 6), (14, 4), (17, 8),
+
+Sorted by built-in less:
+(3, 7), (3, 10), (8, 1), (8, 5), (9, 3), (11, 12), (11, 15), (14, 4), (14, 6), (17, 8),
+
+Sorted by custom less:
+(3, 7), (3, 10), (8, 1), (8, 5), (9, 3), (11, 12), (11, 15), (14, 4), (14, 6), (17, 8),
+
+Sorted by custom greater:
+(17, 8), (14, 6), (14, 4), (11, 15), (11, 12), (9, 3), (8, 5), (8, 1), (3, 10), (3, 7),
+
+Sorted by distance to origin:
+(3, 7), (8, 1), (8, 5), (9, 3), (3, 10), (14, 4), (14, 6), (11, 12), (11, 15), (17, 8),
+
+```
+
+Аналогичным образом можно использовать функции сравнение в упорядоченных контейнерых `std::set` и `std::map`.
+
+Примеры для сортироки множества:
+
+```C++
+#include <iostream>
+#include <set>
+#include <string>
+
+// Define a structure for a Person
+struct Person {
+    std::string name;
+    int age;
+    double height;  // height in meters
+};
+
+struct CompareHeightStruct {
+    bool operator()(const Person& a, const Person& b) const {
+        return a.height < b.height;
+    }
+};
+
+template<typename T>
+void printPersons(const T& people) {
+    for (const auto& person : people) {
+        std::cout << person.name << "\t (" << person.age << ", " << person.height << "m)" << '\n';
+    }
+}
+
+int main() {
+    // Set of Person sorted by name
+    auto cmp_name = [](const Person& a, const Person& b) { return a.name < b.name; };
+    std::set<Person, decltype(cmp_name)> peopleByName = {
+        {"Alice", 30, 1.65}, {"Bob", 25, 1.80}, {"Charlie", 35, 1.75}};
+
+    std::cout << "People sorted by name:" << std::endl;
+    printPersons(peopleByName);
+
+
+    // Set of Person sorted by age
+    auto cmp_age = [](const Person& a, const Person& b) { return a.age < b.age; };
+    std::set<Person, decltype(cmp_age)> peopleByAge = {
+        {"Alice", 30, 1.65}, {"Bob", 25, 1.80}, {"Charlie", 35, 1.75}};
+
+    std::cout << "\nPeople sorted by age:" << std::endl;
+    printPersons(peopleByAge);
+
+
+    // Set of Person sorted by height
+    auto cmp_height = [](const Person& a, const Person& b) { return a.height < b.height; };
+    std::set<Person, decltype(cmp_height)> peopleByHeight = { // std::set<Person, CompareHeightStruct>
+        {"Alice", 30, 1.65},
+        {"Bob", 25, 1.80},
+        {"Charlie", 35, 1.75}};
+
+    std::cout << "\nPeople sorted by height:" << std::endl;
+    printPersons(peopleByHeight);
+
+    return 0;
+}
+
+```
+
+```
+People sorted by name:
+Alice    (30, 1.65m)
+Bob      (25, 1.8m)
+Charlie  (35, 1.75m)
+
+People sorted by age:
+Bob      (25, 1.8m)
+Alice    (30, 1.65m)
+Charlie  (35, 1.75m)
+
+People sorted by height:
+Alice    (30, 1.65m)
+Charlie  (35, 1.75m)
+Bob      (25, 1.8m)
+```
+
+Можно придумать сложные сортировки самых разных видов (для составных типов или коллекций/кортежей):
+
+- изменение "приоритета" сравнений: сначала по третьему полю, при его равенстве -- по первому, затем -- по второму
+
+- первый элемент по возрастанию, затем -- второй элемент по убыванию
+
+- возрастание/убывание среднего полей или элементов
+
+- возрастание или убывание некоторой метрики: среднего, медианы (сложно ли будет считать такую сортировку? как это оптимизировать), расстояния от начала координат или другой точки
+
+Все эти приемы лучше всего отрабатываются на задачах, которые и будут предложены в курсе.

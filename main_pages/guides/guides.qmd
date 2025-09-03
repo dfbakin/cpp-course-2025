@@ -1,0 +1,13 @@
+---
+title: Гайды
+description-meta: "Ссылки и материалы курса 'Программирование на C++' для Лицея НИУ ВШЭ"
+listing:
+  - id: guides
+    contents:
+      - guides.yaml
+    template: guides_links_template.ejs
+    page-size: 50
+---
+
+:::{#materials}
+:::
