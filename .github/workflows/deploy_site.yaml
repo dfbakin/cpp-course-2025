@@ -1,0 +1,33 @@
+name: Render and deploy Quarto files
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  quarto-render-and-deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: bakindf/quarto_deploy_container:1.0.0
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Pull website resources
+        run: dvc pull resources.dvc
+
+      - name: Render Quarto files
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Rename output directory
+        run: mv _site cpp25_dfbakin_com
+
+      - name: Deploy using rsync
+        uses: burnett01/rsync-deployments@7.0.2
+        with:
+          switches: -avzr --delete
+          path: cpp25_dfbakin_com
+          remote_path: /var/websites
+          remote_host: dfbakin.com
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
