@@ -1,5 +1,5 @@
 ---
-title: "Курс C++ 2024"
+title: "Курс C++ 2025"
 image: "resources/images/profile_pic.png"
 page-navigation: false
 toc: false
@@ -23,12 +23,13 @@ page-layout: full
 #       - "title asc"
 ---
 
-Курсы был разработан для 2024-2025 учебного года и охватывает основы программирования на C++, а также алгоритмы начального уровня.
+Курс 2025-2026 по основам программирования на C++ и алгоритмам начального уровня.
 
 
-## Контакты
+
+## Контакты преподавателя
 - **Telegram**: [@dfbakin](https://t.me/dfbakin)
-- **Email**: [denis.bakin5@gmail.com](mailto:denis.bakin5@gmail.com)
+- **Корпоративный email**: [dfbakin_1@edu.hse.ru](mailto:dfbakin_1@edu.hse.ru)
 - **Сайт**: [dfbakin.com](https://dfbakin.com)
 
 

@@ -1,6 +1,6 @@
 Here is the updated README.md with the description of your C++ course:
 
-## C++ Course 2024
+## C++ Course 2025
 
 This repository contains materials for the **C++ Programming Course** designed for students of the Lyceum of the National Research University Higher School of Economics (НИУ ВШЭ). The course introduces students to the fundamentals of programming in C++ and covers topics such as:
 
@@ -31,7 +31,7 @@ The course is divided into lectures, practical assignments, and quizzes:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/cpp_course_2024.git
+   git clone https://github.com/your-repo/cpp_course_2025.git
    ```
 2. Install [Quarto](https://quarto.org/) for rendering the website and presentations.
 3. Render the website:

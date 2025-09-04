@@ -3,13 +3,13 @@ project:
   output-dir: _site
 
 # Meta
-description-meta: "Intoduction to C++ for HSE Lyceum (2024)"
+description-meta: "Intoduction to C++ for HSE Lyceum (2025)"
 author-meta: "Denis Bakin"
 
 website:
   title: "C++ Course"
   image: "resources/images/favicon.png"
-  description: "Website of 'Intoduction to C++' for HSE Lyceum (2024)"
+  description: "Website of 'Intoduction to C++' for HSE Lyceum (2025)"
 
   navbar:
     background: dark
@@ -47,7 +47,7 @@ website:
         href: https://dfbakin.com
         target: _blank
       - icon: github
-        href: https://github.com/dfbakin/cpp-course-2024
+        href: https://github.com/dfbakin/cpp-course-2025
         target: _blank
 
   page-navigation: true
@@ -59,7 +59,7 @@ website:
       adapted by [Dr. Gang He](http://drganghe.github.io)
     right:
       - icon: github
-        href: https://github.com/dfbakin/cpp-course-2024
+        href: https://github.com/dfbakin/cpp-course-2025
         target: _blank
 
   search:
@@ -70,13 +70,13 @@ website:
 
   draft-mode: unlinked
 
-  repo-url: https://github.com/dfbakin/cpp-course-2024
+  repo-url: https://github.com/dfbakin/cpp-course-2025
 
   open-graph: true
 
   twitter-card: true
 
-  site-url: "https://cpp24.dfbakin.com"
+  site-url: "https://cpp25.dfbakin.com"
 
 format:
   html:
