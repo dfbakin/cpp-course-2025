@@ -3,7 +3,12 @@
   <% items.forEach(item => { %>
     <article class="lecture-card">
       <header>
-        <h3>Занятие <%= item.number %>: <%= item.title %></h3>
+        <% if (item.number) { %>
+          <h3>№<%= item.number %>: <%= item.title %></h3>
+        <% } else { %>
+          <h3><%= item.title %></h3>
+        <% } %>
+
         <% if (item.description) { %>
           <p class="lecture-desc"><%= item.description %></p>
         <% } %>
@@ -17,6 +22,12 @@
         <% if (docs.length) { %>
           <div class="resource-group">
             <strong>Документы:</strong> <%= docs.join(' • ') %>
+          </div>
+        <% } %>
+        
+        <% if (item.contest) { %>
+          <div class="resource-group">
+            <strong>Практикум:</strong> <a href="<%= item.contest %>" class="link">Практикум</a>
           </div>
         <% } %>
 

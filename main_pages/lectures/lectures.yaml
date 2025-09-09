@@ -1,77 +1,81 @@
 - title: Переменные, ввод-вывод, операции
   number: 1
-  description: Переменные, ввод-вывод, операции
+  description: Переменные, типы, ввод-вывод, арифметические операции, задача о 
+    получении разрядов в позиционной системе счисления
   material: /lectures/io_variables/notes.html
   presentation: /lectures/io_variables/presentation.pdf
 
-# - title: Условия, ветвление, отладка
-#   number: 2
-#   description: Условия, ветвление, отладка
-#   material: /lectures/conditions/notes.html
+- title: Условия, ветвление, отладка
+  number: 2
+  description: Хранение целых чисел, переполнение. 
+    Логические операции, операции сравнения, условия, switch-case. Отладка программ. Хранение float
+  material: /lectures/conditions/notes.html
+  presentation: /lectures/conditions/presentation.pdf
 
-# - title: Циклы
-#   number: 3
-#   description: Циклы
-#   material: /lectures/cycles/notes.html
+- title: Циклы
+  number: 3
+  description: Циклы (for, while, do-while), break, continue, вложенность циклов
+    Получение всех цифр числа, нахождения экстремума в последовательности, счетчиков
 
-# - title: Работа с std::vector
-#   number: 4
-#   description: Работа с std::vector
-#   material: /lectures/std_vector/notes.html
+- title: O-нотация. Теория чисел
+  number: 4
+  description: Оценка сложностей алгоритмов. Быстрое возведение в степень. 
+    Проверка на делимость и простоту, нахождение всех простых в диапазоне (без решета Эратосфен), факторизация
 
-# - title: O-нотация. Теория чисел
-#   number: 5
-#   description: O-нотация. Теория чисел
-#   material: /lectures/complexity_prime_numbers/notes.html
+- title: Работа с std::vector
+  number: 5
+  description: Динамические массивы. Обработка массивов с помощью циклов. std::vector. Методы std::vector, копирование, size и capacity, сложности операций
 
-# - title: Ссылки, указатели, работа с памятью
-#   number: 6
-#   description: Ссылки, указатели, работа с памятью
-#   material: /lectures/ref_ptr_files/notes.html
+- title: Ссылки, указатели, работа с памятью
+  number: 6
+  description: "Ссылки и указатели, константность, UB (dangling reference). Работа с файлами: ввод-вывод, текстовые и двоичные файлы"
 
-# - title: Функции
-#   number: 7
-#   description: Функции
-#   material: /lectures/functions/notes.html
+- title: Двумерные массивы
+  number: 7
+  description: Двумерные динамические массивы, способы создания и работы с ними
 
-# - title: Константность. Структуры
-#   number: 8
-#   description: Константность. Структуры
-#   material: /lectures/const_structures/notes.html
+- title: Функции
+  number: 8
+  description: Функции, аргументы, возвращаемые значения, перегрузки. Передача аргументов по ссылке и по значению. Лямбда функции
 
-# - title: STL --- 1
-#   number: 9
-#   description: STL --- 1
-#   material: /lectures/stl_1/notes.html
+- title: Константность. Структуры
+  number: 9
+  description: Константные переменные, ссылки и их использование в функциях. Структуры.
 
-# - title: STL --- 2
-#   number: 10
-#   description: STL --- 2
-#   material: /lectures/stl_2/notes.html
+- title: STL — 1
+  number: 10
+  description: Шаблоны, итераторы, std::unordered_set, std::set
+  material: /lectures/stl_1/notes.html
 
-# - title: Сортировки. Компараторы
-#   number: 11
-#   description: Сортировки. Компараторы
-#   material: /lectures/sort_compare_funcs/notes.html
+- title: STL — 2
+  number: 11
+  description: Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)
+
+- title: STL — 3
+  number: 12
+  description: Сортировки, компараторы.
+
+- title: Контрольная работа — 2
+  description: Контрольная работа за второй модуль.
 
 # - title: Рекурсия
 #   number: 12
 #   description: Рекурсия
 #   material: /lectures/recursion/notes.html
 
-# - title: Строки --- 1
+# - title: Строки — 1
 #   number: 13
-#   description: Строки --- 1
+#   description: Строки — 1
 #   material: /lectures/strings_1/notes.html
 
-# - title: Строки --- 2
+# - title: Строки — 2
 #   number: 14
-#   description: Строки --- 2
+#   description: Строки — 2
 #   material: /lectures/strings_2/notes.html
 
-# - title: Строки --- 3
+# - title: Строки — 3
 #   number: 15
-#   description: Строки --- 3
+#   description: Строки — 3
 #   material: /lectures/strings_3/notes.html
 
 # - title: Приближенное решение задач
