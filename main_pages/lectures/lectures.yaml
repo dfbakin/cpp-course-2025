@@ -16,6 +16,8 @@
   number: 3
   description: Циклы (for, while, do-while), break, continue, вложенность циклов
     Получение всех цифр числа, нахождения экстремума в последовательности, счетчиков
+  material: /lectures/cycles/notes.html
+  presentation: /lectures/cycles/presentation.pdf
 
 - title: O-нотация. Теория чисел
   number: 4
@@ -45,7 +47,6 @@
 - title: STL — 1
   number: 10
   description: Шаблоны, итераторы, std::unordered_set, std::set
-  material: /lectures/stl_1/notes.html
 
 - title: STL — 2
   number: 11
