@@ -249,7 +249,7 @@ int main() {
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 ```C++
 #include <iostream>
@@ -260,14 +260,15 @@ int main() {
     std::getline(std::cin, name);
 
     for (char letter: name) {
-        std::cout << letter << '\t' << static_cast<int>(letter) << '\n';
+        std::cout << letter << '\t' << 
+            static_cast<int>(letter) << '\n';
     }
 }
 ```
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ```
 Enter your name:
 Nikolai

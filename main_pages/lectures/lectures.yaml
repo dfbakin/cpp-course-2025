@@ -16,8 +16,8 @@
   number: 3
   description: Циклы (for, while, do-while), break, continue, вложенность циклов
     Получение всех цифр числа, нахождения экстремума в последовательности, счетчиков
-  material: /lectures/cycles/notes.html
-  presentation: /lectures/cycles/presentation.pdf
+  material: /lectures/loops/notes.html
+  presentation: /lectures/loops/presentation.pdf
 
 - title: O-нотация. Теория чисел
   number: 4
@@ -31,6 +31,9 @@
 - title: Ссылки, указатели, работа с памятью
   number: 6
   description: "Ссылки и указатели, константность, UB (dangling reference). Работа с файлами: ввод-вывод, текстовые и двоичные файлы"
+
+- title: Контрольная работа — 1
+  description: Контрольная работа за первый модуль.
 
 - title: Двумерные массивы
   number: 7
