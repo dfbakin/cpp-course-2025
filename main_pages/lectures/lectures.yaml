@@ -15,9 +15,18 @@
 - title: Циклы
   number: 3
   description: Циклы (for, while, do-while), break, continue, вложенность циклов
-    Получение всех цифр числа, нахождения экстремума в последовательности, счетчиков
+    Получение всех цифр числа, нахождения экстремума в последовательности, счетчики
   material: /lectures/loops/notes.html
   presentation: /lectures/loops/presentation.pdf
+  practice: 
+      - text: Группа 1
+        href: https://official.contest.yandex.ru/contest/81939/enter/
+      - text: Группа 3
+        href: https://official.contest.yandex.ru/contest/81940/enter/
+      - text: Группа 4
+        href: https://official.contest.yandex.ru/contest/81941/enter/
+      - text: Группа 5
+        href: https://official.contest.yandex.ru/contest/81942/enter/
 
 - title: O-нотация. Теория чисел
   number: 4

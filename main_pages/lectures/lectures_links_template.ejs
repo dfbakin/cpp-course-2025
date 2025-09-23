@@ -25,9 +25,12 @@
           </div>
         <% } %>
         
-        <% if (item.contest) { %>
+        <% if (item.practice && Array.isArray(item.practice) && item.practice.length) { %>
           <div class="resource-group">
-            <strong>Практикум:</strong> <a href="<%= item.contest %>" class="link">Практикум</a>
+            <strong>Практикум:</strong>
+            <% item.practice.forEach(function(practice, idx) { %>
+              <a href="<%= practice.href %>" class="link"><%= practice.text %></a><%= idx < item.practice.length - 1 ? ' • ' : '' %>
+            <% }); %>
           </div>
         <% } %>
 
