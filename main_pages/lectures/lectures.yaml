@@ -32,6 +32,8 @@
   number: 4
   description: Оценка сложностей алгоритмов. Быстрое возведение в степень. 
     Проверка на делимость и простоту, нахождение всех простых в диапазоне (без решета Эратосфен), факторизация
+  material: /lectures/complexity_prime_numbers/notes.html
+  presentation: /lectures/complexity_prime_numbers/presentation.pdf
 
 - title: Работа с std::vector
   number: 5
