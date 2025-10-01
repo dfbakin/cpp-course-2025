@@ -40,3 +40,20 @@
 
     - text: "Добавлена задача H \"Числа Фибоначчи по индексам\""
       time: "2025-09-22T16:17"
+
+- title: Делимость
+  number: 2
+  description: "Оценка сложностей алгоритмов. Быстрое возведение в степень. Проверка на делимость и простоту, факторизация"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/82483/enter/
+      deadline: 2025-10-08T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/82484/enter/
+      deadline: 2025-10-10T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/82485/enter/
+      deadline: 2025-10-10T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/82487/enter/
+      deadline: 2025-10-11T23:59:59
