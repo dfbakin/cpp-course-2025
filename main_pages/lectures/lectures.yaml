@@ -11,6 +11,7 @@
     Логические операции, операции сравнения, условия, switch-case. Отладка программ. Хранение float
   material: /lectures/conditions/notes.html
   presentation: /lectures/conditions/presentation.pdf
+  quiz: https://official.contest.yandex.ru/contest/82423/enter/
 
 - title: Циклы
   number: 3
