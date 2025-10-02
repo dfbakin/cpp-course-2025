@@ -194,7 +194,7 @@ for (size_t i = 0; i < data.size(); ++i) {
 
 - `capacity` -- на сколько элементов уже выделена память
 
-- `size`≤ `capacity` Строгое неравенство достигает в том случае, когда память уже была выделена, но не все элементы уже были добавлены в вектор
+- `size` $\le$ `capacity` Строгое неравенство достигает в том случае, когда память уже была выделена, но не все элементы уже были добавлены в вектор
 
 ![Иллюсрация `vector::capacity` и `vector::size`](/resources/images/vector_capacity_size.png)
 
@@ -212,16 +212,16 @@ for (size_t i = 0; i < data.size(); ++i) {
 
 int main() {
     std::vector<int> data = {1, 2};
-    std::cout << data.size() << "\t" << data.capacity() << "\n";
+    std::cout << data.size() << "\t" << data.capacity() << "\n"; // 2 2
 
     data.push_back(3);
-    std::cout << data.size() << "\t" << data.capacity() << "\n";
+    std::cout << data.size() << "\t" << data.capacity() << "\n"; // 3 4
 
     data.push_back(4);
-    std::cout << data.size() << "\t" << data.capacity() << "\n";
+    std::cout << data.size() << "\t" << data.capacity() << "\n"; // 4 4
 
     data.push_back(5);
-    std::cout << data.size() << "\t" << data.capacity() << "\n";
+    std::cout << data.size() << "\t" << data.capacity() << "\n"; // 5 8
 }
 ```
 
@@ -231,7 +231,6 @@ int main() {
 4	4
 5	8
 ```
-
 
 
 С этим новым знанием можно добиться одинакового исполнения уже знакомой нам части кода:

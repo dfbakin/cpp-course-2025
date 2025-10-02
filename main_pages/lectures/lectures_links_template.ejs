@@ -34,6 +34,15 @@
           </div>
         <% } %>
 
+        <% if (item.quiz && Array.isArray(item.quiz) && item.quiz.length) { %>
+          <div class="resource-group">
+            <strong>Тест:</strong>
+            <% item.quiz.forEach(function(quiz, idx) { %>
+              <a href="<%= quiz.href %>" class="link"><%= quiz.text %></a><%= idx < item.quiz.length - 1 ? ' • ' : '' %>
+            <% }); %>
+          </div>
+        <% } %>
+
         <% const vids = [];
            if (item.youtube)     vids.push(`<a href="${item.youtube}" class="link">YouTube</a>`);
            if (item.gdrive)      vids.push(`<a href="${item.gdrive}" class="link">Google Drive</a>`);
@@ -45,11 +54,7 @@
           </div>
         <% } %>
 
-        <% if (item.quiz) { %>
-          <div class="resource-group">
-            <strong>Задание:</strong> <a href="<%= item.quiz %>" class="link">Квиз</a>
-          </div>
-        <% } %>
+
       </section>
     </article>
   <% }); %>
