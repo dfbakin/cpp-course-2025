@@ -11,7 +11,15 @@
     Логические операции, операции сравнения, условия, switch-case. Отладка программ. Хранение float
   material: /lectures/conditions/notes.html
   presentation: /lectures/conditions/presentation.pdf
-  quiz: https://official.contest.yandex.ru/contest/82423/enter/
+  quiz: 
+  - text: Группа 1
+    href: https://official.contest.yandex.ru/contest/82423/enter/
+  - text: Группа 3
+    href: https://official.contest.yandex.ru/contest/82519/enter/
+  - text: Группа 4
+    href: https://official.contest.yandex.ru/contest/82520/enter/
+  - text: Группа 5
+    href: https://official.contest.yandex.ru/contest/82521/enter/
 
 - title: Циклы
   number: 3
@@ -28,6 +36,15 @@
         href: https://official.contest.yandex.ru/contest/81941/enter/
       - text: Группа 5
         href: https://official.contest.yandex.ru/contest/81942/enter/
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/82525/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/82522/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/82523/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/82524/enter/
 
 - title: O-нотация. Теория чисел
   number: 4
