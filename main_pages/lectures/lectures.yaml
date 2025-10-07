@@ -52,10 +52,21 @@
     Проверка на делимость и простоту, нахождение всех простых в диапазоне (без решета Эратосфен), факторизация
   material: /lectures/complexity_prime_numbers/notes.html
   presentation: /lectures/complexity_prime_numbers/presentation.pdf
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/82738/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/82741/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/82743/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/82744/enter/
 
 - title: Работа с std::vector
   number: 5
   description: Динамические массивы. Обработка массивов с помощью циклов. std::vector. Методы std::vector, копирование, size и capacity, сложности операций
+  material: /lectures/std_vector/notes.html
+  presentation: /lectures/std_vector/presentation.pdf
 
 - title: Ссылки, указатели, работа с памятью
   number: 6
