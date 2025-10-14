@@ -57,3 +57,20 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/82487/enter/
       deadline: 2025-10-11T23:59:59
+
+- title: std::vector
+  number: 2
+  description: "Изучение контейнера std::vector и его возможностей"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/83176/enter/
+      deadline: 2025-10-26T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/83177/enter/
+      deadline: 2025-10-26T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/83178/enter/
+      deadline: 2025-10-26T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/83179/enter/
+      deadline: 2025-10-26T23:59:59
