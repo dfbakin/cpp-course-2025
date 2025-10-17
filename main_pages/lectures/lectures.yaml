@@ -67,6 +67,9 @@
   description: Динамические массивы. Обработка массивов с помощью циклов. std::vector. Методы std::vector, копирование, size и capacity, сложности операций
   material: /lectures/std_vector/notes.html
   presentation: /lectures/std_vector/presentation.pdf
+  quiz: 
+  - text: Группа 3
+    href: https://official.contest.yandex.ru/contest/83182/enter/
 
 - title: Ссылки, указатели, работа с памятью
   number: 6
