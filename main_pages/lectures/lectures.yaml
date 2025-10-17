@@ -74,6 +74,8 @@
 - title: Ссылки, указатели, работа с памятью
   number: 6
   description: "Ссылки и указатели, константность, UB (dangling reference). Работа с файлами: ввод-вывод, текстовые и двоичные файлы"
+  material: /lectures/ref_ptr_files/notes.html
+  presentation: /lectures/ref_ptr_files/presentation.pdf
 
 - title: Контрольная работа — 1
   description: Контрольная работа за первый модуль.
