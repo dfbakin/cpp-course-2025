@@ -60,7 +60,7 @@
 
 - title: std::vector
   number: 2
-  description: "Изучение контейнера std::vector и его возможностей"
+  description: "Изучение контейнера std::vector. Динамические массивы"
   links:
     - text: Группа 1
       href: https://official.contest.yandex.ru/contest/83176/enter/
