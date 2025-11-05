@@ -102,28 +102,31 @@
     - text: Группа 5 (теория)
       href: https://official.contest.yandex.ru/contest/83595/enter/
 
-- title: Двумерные массивы
-  number: 7
-  description: Двумерные динамические массивы, способы создания и работы с ними
+# - title: Двумерные массивы
+#   number: 7
+#   description: Двумерные динамические массивы, способы создания и работы с ними
 
 - title: Функции
-  number: 8
-  description: Функции, аргументы, возвращаемые значения, перегрузки. Передача аргументов по ссылке и по значению. Лямбда функции
+  number: 7
+  description: Функции, аргументы, возвращаемые значения, перегрузки. 
+    Передача аргументов по ссылке и по значению. Лямбда функции
+  material: /lectures/functions/notes.html
+  presentation: /lectures/functions/presentation.pdf
 
 - title: Константность. Структуры
-  number: 9
+  number: 8
   description: Константные переменные, ссылки и их использование в функциях. Структуры.
 
 - title: STL — 1
-  number: 10
+  number: 9
   description: Шаблоны, итераторы, std::unordered_set, std::set
 
 - title: STL — 2
-  number: 11
+  number: 10
   description: Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)
 
 - title: STL — 3
-  number: 12
+  number: 11
   description: Сортировки, компараторы.
 
 - title: Контрольная работа — 2

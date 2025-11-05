@@ -414,42 +414,42 @@ int main() {
 
 # Перегрузки функций
 
-    Перегрузки функций (function overloading) -- это определение функций с одинаковым названием, но разным набором аргументов. Для успешной компиляции перегрузки функции
+Перегрузки функций (function overloading) -- это определение функций с одинаковым названием, но разным набором аргументов. Для успешной компиляции перегрузки функции
 
-    Например:
+Например:
 
-    ```C++
-    #include <iostream>
-    #include <string>
+```C++
+#include <iostream>
+#include <string>
 
-    // Overload 1: Log with a simple message
-    void logger(const std::string& message) {
-        std::cout << "[INFO]: " << message << std::endl;
-    }
+// Overload 1: Log with a simple message
+void logger(const std::string& message) {
+    std::cout << "[INFO]: " << message << std::endl;
+}
 
-    // Overload 2: Log with an error code and message
+// Overload 2: Log with an error code and message
 
-    void logger(int errorCode, const std::string& message) {
-        std::cout << "[ERROR " << errorCode << "]: " << message << std::endl;
-    }
+void logger(int errorCode, const std::string& message) {
+    std::cout << "[ERROR " << errorCode << "]: " << message << std::endl;
+}
 
-    // Overload 3: Log with a message and a severity level (e.g., INFO, WARNING, ERROR)
-    void logger(const std::string& message, const std::string& severity) {
-        std::cout << "[" << severity << "]: " << message << std::endl;
-    }
+// Overload 3: Log with a message and a severity level (e.g., INFO, WARNING, ERROR)
+void logger(const std::string& message, const std::string& severity) {
+    std::cout << "[" << severity << "]: " << message << std::endl;
+}
 
-    int main() {
-        logger("System started successfully.");
-        logger(404, "Resource not found.");
-        logger("Disk space running low", "WARNING");
+int main() {
+    logger("System started successfully.");
+    logger(404, "Resource not found.");
+    logger("Disk space running low", "WARNING");
 
-        return 0;
-    }
-    ```
+    return 0;
+}
+```
 
 Вывод примера:
 
-```Plain Text
+```
 [INFO]: System started successfully.
 [ERROR 404]: Resource not found.
 [WARNING]: Disk space running low
@@ -558,8 +558,8 @@ int main() {
 #include <iostream>
 #include <functional>
 
-void exampleFunc(int number, std::function<bool(int)> some_lambda) {
-    if (some_lambda(number)) {
+void outputVerdict(int number, std::function<bool(int)> checker) {
+    if (checker(number)) {
         std::cout  << "Checker returned true for this value!" << std::endl;
     } else {
         std::cout  << "Checker returned false for this value!" << std::endl;
