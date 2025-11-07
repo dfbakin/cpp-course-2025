@@ -42,7 +42,7 @@
       time: "2025-09-22T16:17"
 
 - title: Делимость
-  number: 2
+  number: 3
   description: "Оценка сложностей алгоритмов. Быстрое возведение в степень. Проверка на делимость и простоту, факторизация"
   links:
     - text: Группа 1
@@ -59,7 +59,7 @@
       deadline: 2025-10-11T23:59:59
 
 - title: std::vector
-  number: 2
+  number: 4
   description: "Изучение контейнера std::vector. Динамические массивы"
   links:
     - text: Группа 1
@@ -74,3 +74,20 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/83179/enter/
       deadline: 2025-10-26T23:59:59
+
+- title: Функции
+  number: 5
+  description: "Изучение функций в C++. Параметры и возвращаемые значения"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/84859/enter/
+      deadline: 2025-11-13T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/84860/enter/
+      deadline: 2025-11-14T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/84861/enter/
+      deadline: 2025-11-14T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/84862/enter/
+      deadline: 2025-11-15T23:59:59
