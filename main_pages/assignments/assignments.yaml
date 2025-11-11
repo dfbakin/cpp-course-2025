@@ -75,7 +75,7 @@
       href: https://official.contest.yandex.ru/contest/83179/enter/
       deadline: 2025-10-26T23:59:59
 
-- title: Функции
+- title: Функции -- 1
   number: 5
   description: "Изучение функций в C++. Параметры и возвращаемые значения"
   links:
@@ -91,3 +91,10 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/84862/enter/
       deadline: 2025-11-15T23:59:59
+
+- title: Функции -- 2. Структуры
+  number: 6
+  description: "Изучение структур в C++. Определение и использование"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/85266/enter/
