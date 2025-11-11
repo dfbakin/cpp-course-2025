@@ -116,6 +116,8 @@
 - title: Константность. Структуры
   number: 8
   description: Константные переменные, ссылки и их использование в функциях. Структуры.
+  material: /lectures/const_structures/notes.html
+  presentation: /lectures/const_structures/presentation.pdf
 
 - title: STL — 1
   number: 9
