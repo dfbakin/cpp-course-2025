@@ -118,6 +118,15 @@
   description: Константные переменные, ссылки и их использование в функциях. Структуры.
   material: /lectures/const_structures/notes.html
   presentation: /lectures/const_structures/presentation.pdf
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/86130/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/86132/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/86133/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/86134/enter/
 
 - title: Практикум
   presentation: /lectures/practice_functions/presentation.pdf
