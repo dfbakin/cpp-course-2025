@@ -398,14 +398,7 @@ long long toNumber(const vector<Factor>& F, long long MOD = -1) {
     int64_t acc = 1;
     int64_t tmp = 1;
     for (const Factor& f : F) {
-        for (int i = 0; i < f.e; ++i) {
-            tmp = acc;
-            acc *= f.p;
-            if (tmp > acc) {
-                throw std::overflow_error("Overflow in toNumber");
-            }
-            if (MOD != -1) acc %= MOD;
-        }
+        acc*=fastPow(f.p, f.e, MOD)
     }
     return acc;
 }
