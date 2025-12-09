@@ -159,13 +159,15 @@
 - title: STL — 2
   number: 10
   description: Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)
+  material: /lectures/stl_2/notes.html
+  presentation: /lectures/stl_2/presentation.pdf
+
+- title: Контрольная работа — 2
+  description: Контрольная работа за второй модуль.
 
 - title: STL — 3
   number: 11
   description: Сортировки, компараторы.
-
-- title: Контрольная работа — 2
-  description: Контрольная работа за второй модуль.
 
 # - title: Рекурсия
 #   number: 12
