@@ -128,3 +128,43 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/85791/enter/
       deadline: 2025-12-07T23:59:59
+
+- title: "STL — 1. Шаблоны, итераторы, множества"
+  number: 8
+  description: "Шаблоны, итераторы, множества"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/86451/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/86451/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/86451/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/86451/enter/
+      deadline: 2025-12-27T23:59:59
+  updates:
+    - text: "ДЗ будет дополнено в ближайшее время"
+      time: "2025-12-10T02:11:00"
+
+- title: "STL — 2. Пары, кортежи, ассоциативные контейнеры"
+  number: 9
+  description: "Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)"
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/86929/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/86929/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/86929/enter/
+      deadline: 2025-12-27T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/86929/enter/
+      deadline: 2025-12-27T23:59:59
+  updates:
+    - text: "ДЗ будет дополнено в ближайшее время"
+      time: "2025-12-10T02:11:00"
