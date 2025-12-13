@@ -164,6 +164,12 @@
 
 - title: Контрольная работа — 2
   description: Контрольная работа за второй модуль.
+  practice:
+    - text: Группа 5 (практика)
+      href: https://official.contest.yandex.ru/contest/87177/enter/
+  quiz: 
+    - text: Группа 5 (теория)
+      href: https://official.contest.yandex.ru/contest/87179/enter/
 
 - title: STL — 3
   number: 11
