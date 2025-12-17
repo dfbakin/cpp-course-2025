@@ -165,9 +165,13 @@
 - title: Контрольная работа — 2
   description: Контрольная работа за второй модуль.
   practice:
+    - text: Группа 1 (практика)
+      href: https://official.contest.yandex.ru/contest/87387/enter/
     - text: Группа 5 (практика)
       href: https://official.contest.yandex.ru/contest/87177/enter/
   quiz: 
+    - text: Группа 1 (теория)
+      href: https://official.contest.yandex.ru/contest/87384/enter/
     - text: Группа 5 (теория)
       href: https://official.contest.yandex.ru/contest/87179/enter/
 
