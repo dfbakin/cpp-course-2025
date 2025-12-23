@@ -17,11 +17,11 @@ format:
 
 - Visual Studio (нужна регистрация microsoft)
 
-- [repl.it](http://repl.it) (онлайн IDE, поддерживает многофайловые сборки)
+- [repl.it](https://replit.com/) (онлайн IDE, поддерживает многофайловые сборки)
 
-- [onlinegdb.com](http://onlinegdb.com) (онлайн компилятор)
+- [onlinegdb.com](https://onlinegdb.com) (онлайн компилятор)
 
-- [cpp.sh](http://cpp.sh) (онлайн компилятор)
+- [cpp.sh](https://cpp.sh) (онлайн компилятор)
 
 
 
