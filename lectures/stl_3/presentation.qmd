@@ -221,7 +221,8 @@ descendingSet.insert(2);
 
 ```C++
 auto cmp_name = [](const Person& a, const Person& b) {
-    return a.name < b.name;
+    return std::tie(a.name, a.age, a.height)
+         < std::tie(b.name, b.age, b.height);
 };
 
 std::set<Person, decltype(cmp_name)> peopleByName = {
@@ -232,7 +233,8 @@ std::set<Person, decltype(cmp_name)> peopleByName = {
 ```
 
 - `decltype(cmp_name)` -- тип лямбды
-- Множество хранит людей в порядке имён
+- `std::tie` создаёт кортеж ссылок для лексикографического сравнения
+- Множество хранит людей в порядке имён (с tie-breaker по возрасту и росту)
 
 ---
 
@@ -240,7 +242,8 @@ std::set<Person, decltype(cmp_name)> peopleByName = {
 
 ```C++
 auto cmp_age = [](const Person& a, const Person& b) {
-    return a.age < b.age;
+    return std::tie(a.age, a.name, a.height)
+         < std::tie(b.age, b.name, b.height);
 };
 
 std::set<Person, decltype(cmp_age)> peopleByAge = {
@@ -257,7 +260,8 @@ std::set<Person, decltype(cmp_age)> peopleByAge = {
 
 ```C++
 auto cmp_height = [](const Person& a, const Person& b) {
-    return a.height < b.height;
+    return std::tie(a.height, a.name, a.age)
+         < std::tie(b.height, b.name, b.age);
 };
 
 std::set<Person, decltype(cmp_height)> peopleByHeight = {
@@ -277,7 +281,10 @@ std::set<Person, decltype(cmp_height)> peopleByHeight = {
 
 ```C++
 auto cmp = [](const std::string& a, const std::string& b) {
-    return a.length() < b.length();  // по длине ключа
+    if (a.length() != b.length()) {
+        return a.length() < b.length();  // сначала по длине
+    }
+    return a < b;  // затем лексикографически
 };
 
 std::map<std::string, int, decltype(cmp)> wordCount;
@@ -344,9 +351,15 @@ auto cmp = [](const Person& a, const Person& b) {
     }
     return a.name < b.name;  // затем по имени
 };
+
+// Или с использованием std::tie:
+auto cmp_tie = [](const Person& a, const Person& b) {
+    return std::tie(a.age, a.name) < std::tie(b.age, b.name);
+};
 ```
 
 - При равенстве первого критерия используется второй
+- `std::tie` делает код короче и менее подверженным ошибкам
 
 ---
 
@@ -389,4 +402,5 @@ auto good_cmp = [](const int& a, const int& b) {
 - `std::set` и `std::map` принимают компаратор как шаблонный параметр
 - Используйте `decltype` для указания типа лямбды
 - Компаратор должен задавать строгий слабый порядок
+- Для `std::set`/`std::map` используйте tie-breaker'ы (`std::tie`), чтобы различные элементы не считались равными
 
