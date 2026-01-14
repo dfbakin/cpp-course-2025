@@ -188,6 +188,8 @@
 - title: STL — 3
   number: 11
   description: Сортировки, компараторы.
+  material: /lectures/stl_3/notes.html
+  presentation: /lectures/stl_3/presentation.pdf
 
 # - title: Рекурсия
 #   number: 12
