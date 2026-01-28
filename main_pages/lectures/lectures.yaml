@@ -203,10 +203,11 @@
 #   description: Рекурсия
 #   material: /lectures/recursion/notes.html
 
-# - title: Строки — 1
-#   number: 13
-#   description: Строки — 1
-#   material: /lectures/strings_1/notes.html
+- title: Строки — 1
+  number: 12
+  description: Строки — 1
+  material: /lectures/strings_1/notes.html
+  presentation: /lectures/strings_1/presentation.pdf
 
 # - title: Строки — 2
 #   number: 14
