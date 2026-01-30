@@ -146,22 +146,40 @@
       href: https://official.contest.yandex.ru/contest/86451/enter/
       deadline: 2025-12-27T23:59:59
 
-- title: "STL — 2. Пары, кортежи, ассоциативные контейнеры"
+- title: "STL — 2, 3. Пары, кортежи, ассоциативные контейнеры. Компараторы"
   number: 9
-  description: "Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)"
+  description: "Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map). Компараторы"
   links:
     - text: Группа 1
       href: https://official.contest.yandex.ru/contest/86929/enter/
-      deadline: 2025-12-27T23:59:59
+      deadline: 2026-02-08T23:59:59
     - text: Группа 3
       href: https://official.contest.yandex.ru/contest/86929/enter/
-      deadline: 2025-12-27T23:59:59
+      deadline: 2026-02-08T23:59:59
     - text: Группа 4
-      href: https://official.contest.yandex.ru/contest/86929/enter/
-      deadline: 2025-12-27T23:59:59
+      href: https://official.contest.yandex.ru/contest/89411/enter/
+      deadline: 2026-02-15T23:59:59
     - text: Группа 5
-      href: https://official.contest.yandex.ru/contest/86929/enter/
-      deadline: 2025-12-27T23:59:59
+      href: https://official.contest.yandex.ru/contest/89411/enter/
+      deadline: 2026-02-15T23:59:59
   updates:
-    - text: "Раскоментировано Вашим верным слугой"
+    - text: "Ссылки опубликованы. Спасибо @Egot3"
       time: "2025-12-10T02:11:00"
+    - text: "ДЗ официально опубликовано, дедлайн обновлен"
+      time: "2025-01-30T03:25:00"
+
+- title: "Строки — 1"
+  number: 10
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/89251/enter/
+      deadline: 2026-02-22T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/89251/enter/
+      deadline: 2026-02-22T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/89251/enter/
+      deadline: 2026-02-22T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/89251/enter/
+      deadline: 2026-02-22T23:59:59
