@@ -209,6 +209,9 @@
   material: /lectures/strings_1/notes.html
   presentation: /lectures/strings_1/presentation.pdf
 
+- title: День открытых деверей
+  presentation: /lectures/intro_applicants/presentation.pdf
+
 # - title: Строки — 2
 #   number: 14
 #   description: Строки — 2
