@@ -1,202 +1,202 @@
-# - title: Переменные, ввод-вывод, операции
-#   number: 1
-#   description: Переменные, типы, ввод-вывод, арифметические операции, задача о 
-#     получении разрядов в позиционной системе счисления
-#   material: /lectures/io_variables/notes.html
-#   presentation: /lectures/io_variables/presentation.pdf
+- title: Переменные, ввод-вывод, операции
+  number: 1
+  description: Переменные, типы, ввод-вывод, арифметические операции, задача о 
+    получении разрядов в позиционной системе счисления
+  material: /lectures/io_variables/notes.html
+  presentation: /lectures/io_variables/presentation.pdf
 
-# - title: Условия, ветвление, отладка
-#   number: 2
-#   description: Хранение целых чисел, переполнение. 
-#     Логические операции, операции сравнения, условия, switch-case. Отладка программ. Хранение float
-#   material: /lectures/conditions/notes.html
-#   presentation: /lectures/conditions/presentation.pdf
-#   quiz: 
-#   - text: Группа 1
-#     href: https://official.contest.yandex.ru/contest/82423/enter/
-#   - text: Группа 3
-#     href: https://official.contest.yandex.ru/contest/82519/enter/
-#   - text: Группа 4
-#     href: https://official.contest.yandex.ru/contest/82520/enter/
-#   - text: Группа 5
-#     href: https://official.contest.yandex.ru/contest/82521/enter/
+- title: Условия, ветвление, отладка
+  number: 2
+  description: Хранение целых чисел, переполнение. 
+    Логические операции, операции сравнения, условия, switch-case. Отладка программ. Хранение float
+  material: /lectures/conditions/notes.html
+  presentation: /lectures/conditions/presentation.pdf
+  quiz: 
+  - text: Группа 1
+    href: https://official.contest.yandex.ru/contest/82423/enter/
+  - text: Группа 3
+    href: https://official.contest.yandex.ru/contest/82519/enter/
+  - text: Группа 4
+    href: https://official.contest.yandex.ru/contest/82520/enter/
+  - text: Группа 5
+    href: https://official.contest.yandex.ru/contest/82521/enter/
 
-# - title: Циклы
-#   number: 3
-#   description: Циклы (for, while, do-while), break, continue, вложенность циклов
-#     Получение всех цифр числа, нахождения экстремума в последовательности, счетчики
-#   material: /lectures/loops/notes.html
-#   presentation: /lectures/loops/presentation.pdf
-#   practice: 
-#       - text: Группа 1
-#         href: https://official.contest.yandex.ru/contest/81939/enter/
-#       - text: Группа 3
-#         href: https://official.contest.yandex.ru/contest/81940/enter/
-#       - text: Группа 4
-#         href: https://official.contest.yandex.ru/contest/81941/enter/
-#       - text: Группа 5
-#         href: https://official.contest.yandex.ru/contest/81942/enter/
-#       - text: Резерв
-#         href: https://official.contest.yandex.ru/contest/86643/enter/
-#   quiz: 
-#     - text: Группа 1
-#       href: https://official.contest.yandex.ru/contest/82525/enter/
-#     - text: Группа 3
-#       href: https://official.contest.yandex.ru/contest/82522/enter/
-#     - text: Группа 4
-#       href: https://official.contest.yandex.ru/contest/82523/enter/
-#     - text: Группа 5
-#       href: https://official.contest.yandex.ru/contest/82524/enter/
+- title: Циклы
+  number: 3
+  description: Циклы (for, while, do-while), break, continue, вложенность циклов
+    Получение всех цифр числа, нахождения экстремума в последовательности, счетчики
+  material: /lectures/loops/notes.html
+  presentation: /lectures/loops/presentation.pdf
+  practice: 
+      - text: Группа 1
+        href: https://official.contest.yandex.ru/contest/81939/enter/
+      - text: Группа 3
+        href: https://official.contest.yandex.ru/contest/81940/enter/
+      - text: Группа 4
+        href: https://official.contest.yandex.ru/contest/81941/enter/
+      - text: Группа 5
+        href: https://official.contest.yandex.ru/contest/81942/enter/
+      - text: Резерв
+        href: https://official.contest.yandex.ru/contest/86643/enter/
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/82525/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/82522/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/82523/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/82524/enter/
 
-# - title: O-нотация. Теория чисел
-#   number: 4
-#   description: Оценка сложностей алгоритмов. Быстрое возведение в степень. 
-#     Проверка на делимость и простоту, нахождение всех простых в диапазоне (без решета Эратосфен), факторизация
-#   material: /lectures/complexity_prime_numbers/notes.html
-#   presentation: /lectures/complexity_prime_numbers/presentation.pdf
-#   quiz: 
-#     - text: Группа 1
-#       href: https://official.contest.yandex.ru/contest/82738/enter/
-#     - text: Группа 3
-#       href: https://official.contest.yandex.ru/contest/82741/enter/
-#     - text: Группа 4
-#       href: https://official.contest.yandex.ru/contest/82743/enter/
-#     - text: Группа 5
-#       href: https://official.contest.yandex.ru/contest/82744/enter/
+- title: O-нотация. Теория чисел
+  number: 4
+  description: Оценка сложностей алгоритмов. Быстрое возведение в степень. 
+    Проверка на делимость и простоту, нахождение всех простых в диапазоне (без решета Эратосфен), факторизация
+  material: /lectures/complexity_prime_numbers/notes.html
+  presentation: /lectures/complexity_prime_numbers/presentation.pdf
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/82738/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/82741/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/82743/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/82744/enter/
 
-# - title: Работа с std::vector
-#   number: 5
-#   description: Динамические массивы. Обработка массивов с помощью циклов. std::vector. Методы std::vector, копирование, size и capacity, сложности операций
-#   material: /lectures/std_vector/notes.html
-#   presentation: /lectures/std_vector/presentation.pdf
-#   quiz: 
-#   - text: Группа 1
-#     href: https://official.contest.yandex.ru/contest/83181/enter/
-#   - text: Группа 3
-#     href: https://official.contest.yandex.ru/contest/83182/enter/
-#   - text: Группа 4
-#     href: https://official.contest.yandex.ru/contest/83350/enter/
+- title: Работа с std::vector
+  number: 5
+  description: Динамические массивы. Обработка массивов с помощью циклов. std::vector. Методы std::vector, копирование, size и capacity, сложности операций
+  material: /lectures/std_vector/notes.html
+  presentation: /lectures/std_vector/presentation.pdf
+  quiz: 
+  - text: Группа 1
+    href: https://official.contest.yandex.ru/contest/83181/enter/
+  - text: Группа 3
+    href: https://official.contest.yandex.ru/contest/83182/enter/
+  - text: Группа 4
+    href: https://official.contest.yandex.ru/contest/83350/enter/
 
-# - title: Ссылки, указатели, работа с памятью
-#   number: 6
-#   description: "Ссылки и указатели, константность, UB (dangling reference). Работа с файлами: ввод-вывод, текстовые и двоичные файлы"
-#   material: /lectures/ref_ptr_files/notes.html
-#   presentation: /lectures/ref_ptr_files/presentation.pdf
+- title: Ссылки, указатели, работа с памятью
+  number: 6
+  description: "Ссылки и указатели, константность, UB (dangling reference). Работа с файлами: ввод-вывод, текстовые и двоичные файлы"
+  material: /lectures/ref_ptr_files/notes.html
+  presentation: /lectures/ref_ptr_files/presentation.pdf
 
-# - title: Контрольная работа — 1
-#   description: Контрольная работа за первый модуль.
-#   practice:
-#     - text: Группа 1 (практика)
-#       href: https://official.contest.yandex.ru/contest/83572/enter/
-#     - text: Группа 3 (практика)
-#       href: https://official.contest.yandex.ru/contest/83586/enter/
-#     - text: Группа 4 (практика)
-#       href: https://official.contest.yandex.ru/contest/83587/enter/
-#     - text: Группа 5 (практика)
-#       href: https://official.contest.yandex.ru/contest/83588/enter/
-#   quiz: 
-#     - text: Группа 1 (теория)
-#       href: https://official.contest.yandex.ru/contest/83591/enter/
-#     - text: Группа 3 (теория)
-#       href: https://official.contest.yandex.ru/contest/83593/enter/
-#     - text: Группа 4 (теория)
-#       href: https://official.contest.yandex.ru/contest/83594/enter/
-#     - text: Группа 5 (теория)
-#       href: https://official.contest.yandex.ru/contest/83595/enter/
+- title: Контрольная работа — 1
+  description: Контрольная работа за первый модуль.
+  practice:
+    - text: Группа 1 (практика)
+      href: https://official.contest.yandex.ru/contest/83572/enter/
+    - text: Группа 3 (практика)
+      href: https://official.contest.yandex.ru/contest/83586/enter/
+    - text: Группа 4 (практика)
+      href: https://official.contest.yandex.ru/contest/83587/enter/
+    - text: Группа 5 (практика)
+      href: https://official.contest.yandex.ru/contest/83588/enter/
+  quiz: 
+    - text: Группа 1 (теория)
+      href: https://official.contest.yandex.ru/contest/83591/enter/
+    - text: Группа 3 (теория)
+      href: https://official.contest.yandex.ru/contest/83593/enter/
+    - text: Группа 4 (теория)
+      href: https://official.contest.yandex.ru/contest/83594/enter/
+    - text: Группа 5 (теория)
+      href: https://official.contest.yandex.ru/contest/83595/enter/
 
-# - title: Резерв контрольной работы — 1
-#   description: Резервный срок для написания контрольной работы за первый модуль.
-#   practice:
-#     - text: Группы 1 (практика)
-#       href: https://official.contest.yandex.ru/contest/86640/enter/
-#     - text: Группа 3 (практика)
-#       href: https://official.contest.yandex.ru/contest/86641/enter/
-#     - text: Группа 4 (практика)
-#       href: https://official.contest.yandex.ru/contest/86641/enter/
-#     - text: Группа 5 (практика)
-#       href: https://official.contest.yandex.ru/contest/86642/enter/
-#   quiz: 
-#     - text: Группа 1 (теория)
-#       href: https://official.contest.yandex.ru/contest/86638/enter/
-#     - text: Группа 3 (теория)
-#       href: https://official.contest.yandex.ru/contest/86639/enter/
-#     - text: Группа 4 (теория)
-#       href: https://official.contest.yandex.ru/contest/86639/enter/
-#     - text: Группа 5 (теория)
-#       href: https://official.contest.yandex.ru/contest/86639/enter/
+- title: Резерв контрольной работы — 1
+  description: Резервный срок для написания контрольной работы за первый модуль.
+  practice:
+    - text: Группы 1 (практика)
+      href: https://official.contest.yandex.ru/contest/86640/enter/
+    - text: Группа 3 (практика)
+      href: https://official.contest.yandex.ru/contest/86641/enter/
+    - text: Группа 4 (практика)
+      href: https://official.contest.yandex.ru/contest/86641/enter/
+    - text: Группа 5 (практика)
+      href: https://official.contest.yandex.ru/contest/86642/enter/
+  quiz: 
+    - text: Группа 1 (теория)
+      href: https://official.contest.yandex.ru/contest/86638/enter/
+    - text: Группа 3 (теория)
+      href: https://official.contest.yandex.ru/contest/86639/enter/
+    - text: Группа 4 (теория)
+      href: https://official.contest.yandex.ru/contest/86639/enter/
+    - text: Группа 5 (теория)
+      href: https://official.contest.yandex.ru/contest/86639/enter/
 
-# - title: Функции
-#   number: 7
-#   description: Функции, аргументы, возвращаемые значения, перегрузки. 
-#     Передача аргументов по ссылке и по значению. Лямбда функции
-#   material: /lectures/functions/notes.html
-#   presentation: /lectures/functions/presentation.pdf
+- title: Функции
+  number: 7
+  description: Функции, аргументы, возвращаемые значения, перегрузки. 
+    Передача аргументов по ссылке и по значению. Лямбда функции
+  material: /lectures/functions/notes.html
+  presentation: /lectures/functions/presentation.pdf
 
-# - title: Константность. Структуры
-#   number: 8
-#   description: Константные переменные, ссылки и их использование в функциях. Структуры.
-#   material: /lectures/const_structures/notes.html
-#   presentation: /lectures/const_structures/presentation.pdf
-#   quiz: 
-#     - text: Группа 1
-#       href: https://official.contest.yandex.ru/contest/86130/enter/
-#     - text: Группа 3
-#       href: https://official.contest.yandex.ru/contest/86132/enter/
-#     - text: Группа 4
-#       href: https://official.contest.yandex.ru/contest/86133/enter/
-#     - text: Группа 5
-#       href: https://official.contest.yandex.ru/contest/86134/enter/
+- title: Константность. Структуры
+  number: 8
+  description: Константные переменные, ссылки и их использование в функциях. Структуры.
+  material: /lectures/const_structures/notes.html
+  presentation: /lectures/const_structures/presentation.pdf
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/86130/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/86132/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/86133/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/86134/enter/
 
-# - title: Практикум
-#   presentation: /lectures/practice_functions/presentation.pdf
+- title: Практикум
+  presentation: /lectures/practice_functions/presentation.pdf
 
-# - title: STL — 1
-#   number: 9
-#   description: Шаблоны, итераторы, std::unordered_set, std::set
-#   material: /lectures/stl_1/notes.html
-#   presentation: /lectures/stl_1/presentation.pdf
+- title: STL — 1
+  number: 9
+  description: Шаблоны, итераторы, std::unordered_set, std::set
+  material: /lectures/stl_1/notes.html
+  presentation: /lectures/stl_1/presentation.pdf
 
-# - title: STL — 2
-#   number: 10
-#   description: Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)
-#   material: /lectures/stl_2/notes.html
-#   presentation: /lectures/stl_2/presentation.pdf
+- title: STL — 2
+  number: 10
+  description: Пары, кортежи, ассоциативные контейнеры (std::unordered_map, std::map)
+  material: /lectures/stl_2/notes.html
+  presentation: /lectures/stl_2/presentation.pdf
 
-# - title: Контрольная работа — 2
-#   description: Контрольная работа за второй модуль.
-#   practice:
-#     - text: Группа 1 (практика)
-#       href: https://official.contest.yandex.ru/contest/87387/enter/
-#     - text: Группа 3 (практика)
-#       href: https://official.contest.yandex.ru/contest/87507/enter/
-#     - text: Группа 4 (практика)
-#       href: https://official.contest.yandex.ru/contest/87510/enter/
-#     - text: Группа 5 (практика)
-#       href: https://official.contest.yandex.ru/contest/87177/enter/
+- title: Контрольная работа — 2
+  description: Контрольная работа за второй модуль.
+  practice:
+    - text: Группа 1 (практика)
+      href: https://official.contest.yandex.ru/contest/87387/enter/
+    - text: Группа 3 (практика)
+      href: https://official.contest.yandex.ru/contest/87507/enter/
+    - text: Группа 4 (практика)
+      href: https://official.contest.yandex.ru/contest/87510/enter/
+    - text: Группа 5 (практика)
+      href: https://official.contest.yandex.ru/contest/87177/enter/
 
-#   quiz: 
-#     - text: Группа 1 (теория)
-#       href: https://official.contest.yandex.ru/contest/87384/enter/
-#     - text: Группа 3 (теория)
-#       href: https://official.contest.yandex.ru/contest/87506/enter/
-#     - text: Группа 4 (теория)
-#       href: https://official.contest.yandex.ru/contest/87511/enter/
-#     - text: Группа 5 (теория)
-#       href: https://official.contest.yandex.ru/contest/87179/enter/
+  quiz: 
+    - text: Группа 1 (теория)
+      href: https://official.contest.yandex.ru/contest/87384/enter/
+    - text: Группа 3 (теория)
+      href: https://official.contest.yandex.ru/contest/87506/enter/
+    - text: Группа 4 (теория)
+      href: https://official.contest.yandex.ru/contest/87511/enter/
+    - text: Группа 5 (теория)
+      href: https://official.contest.yandex.ru/contest/87179/enter/
 
 
-# - title: STL — 3
-#   number: 11
-#   description: Сортировки, компараторы.
-#   material: /lectures/stl_3/notes.html
-#   presentation: /lectures/stl_3/presentation.pdf
-#   practice:
-#     - text: Группа 1
-#       href: https://official.contest.yandex.ru/contest/88922/enter/
-#     - text: Группа 3
-#       href: https://official.contest.yandex.ru/contest/89042/enter/
-#     - text: Группа 4
-#       href: https://official.contest.yandex.ru/contest/89042/enter/
+- title: STL — 3
+  number: 11
+  description: Сортировки, компараторы.
+  material: /lectures/stl_3/notes.html
+  presentation: /lectures/stl_3/presentation.pdf
+  practice:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/88922/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/89042/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/89042/enter/
 
 # - title: Рекурсия
 #   number: 12
