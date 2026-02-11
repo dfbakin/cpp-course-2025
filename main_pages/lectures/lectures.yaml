@@ -198,11 +198,6 @@
     - text: Группа 4
       href: https://official.contest.yandex.ru/contest/89042/enter/
 
-# - title: Рекурсия
-#   number: 12
-#   description: Рекурсия
-#   material: /lectures/recursion/notes.html
-
 - title: Строки — 1
   number: 12
   description: Строки — 1
@@ -217,6 +212,12 @@
   description: Строки — 2
   material: /lectures/strings_2/notes.html
   presentation: /lectures/strings_2/presentation.pdf
+
+- title: Рекурсия
+  number: 14
+  description: Рекурсия
+  material: /lectures/recursion/notes.html
+  presentation: /lectures/recursion/presentation.pdf
 
 # - title: Строки — 3
 #   number: 15
