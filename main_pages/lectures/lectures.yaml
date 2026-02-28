@@ -200,7 +200,7 @@
 
 - title: Строки — 1
   number: 12
-  description: Строки — 1
+  description: Методы строк, простая обработка строк
   material: /lectures/strings_1/notes.html
   presentation: /lectures/strings_1/presentation.pdf
 
@@ -209,20 +209,29 @@
 
 - title: Строки — 2
   number: 13
-  description: Строки — 2
+  description: Префикс функция, КМП алгоритм
   material: /lectures/strings_2/notes.html
   presentation: /lectures/strings_2/presentation.pdf
 
 - title: Рекурсия
   number: 14
-  description: Рекурсия
+  description: Рекурсивные алгоритмы, получение цифр числа, нахождение суммы массива
   material: /lectures/recursion/notes.html
   presentation: /lectures/recursion/presentation.pdf
+  quiz: 
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/90605/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/90605/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/90605/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/90605/enter/
 
-# - title: Строки — 3
-#   number: 15
-#   description: Строки — 3
-#   material: /lectures/strings_3/notes.html
+- title: Строки — 3
+  number: 15
+  description: Перестановки, слова в комбинаторике. Генерация слов в алфавите, скобочных последовательностей, перестановок
+  material: /lectures/strings_3/notes.html
 
 # - title: Приближенное решение задач
 #   number: 16

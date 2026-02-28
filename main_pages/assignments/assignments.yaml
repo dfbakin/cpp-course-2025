@@ -183,3 +183,37 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/89251/enter/
       deadline: 2026-02-22T23:59:59
+  updates:
+    - text: "Задача K не идет в оценку у базовых групп"
+
+- title: "Строки — 2"
+  number: 11
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/89759/enter/
+      deadline: TBA
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/89759/enter/
+      deadline: TBA
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/89759/enter/
+      deadline: TBA
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/89759/enter/
+      deadline: TBA
+
+- title: "Рекурсия"
+  number: 12
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/90607/enter/
+      deadline: TBA
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/90607/enter/
+      deadline: TBA
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/90607/enter/
+      deadline: TBA
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/90607/enter/
+      deadline: TBA
