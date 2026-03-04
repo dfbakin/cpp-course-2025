@@ -232,6 +232,7 @@
   number: 15
   description: Перестановки, слова в комбинаторике. Генерация слов в алфавите, скобочных последовательностей, перестановок
   material: /lectures/strings_3/notes.html
+  presentation: /lectures/strings_3/presentation.pdf
 
 # - title: Приближенное решение задач
 #   number: 16
