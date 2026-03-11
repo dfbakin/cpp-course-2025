@@ -243,6 +243,21 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/91734/enter/
 
+- title: Алгоритмы сортировки
+  number: 16
+  description: Приближенное решение задач
+  material: /lectures/sorting_algorithms/notes.html
+  presentation: /lectures/sorting_algorithms/presentation.pdf
+  quiz:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/91730/enter/
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/91733/enter/
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/91732/enter/
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/91734/enter/
+
 # - title: Приближенное решение задач
 #   number: 16
 #   description: Приближенное решение задач
