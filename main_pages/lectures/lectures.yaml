@@ -258,6 +258,15 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/91734/enter/
 
+- title: Контрольная работа — 3
+  description: Контрольная работа за третий модуль.
+  practice:
+    - text: Группа 1 (практика)
+      href: https://official.contest.yandex.ru/contest/92224/enter/
+  quiz:
+    - text: Группа 1 (теория)
+      href: https://official.contest.yandex.ru/contest/92225/enter/
+
 # - title: Приближенное решение задач
 #   number: 16
 #   description: Приближенное решение задач
