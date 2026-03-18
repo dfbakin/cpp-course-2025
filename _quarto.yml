@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "!private/**"
+    - "."
 
 # Meta
 description-meta: "Intoduction to C++ for HSE Lyceum (2025)"
