@@ -267,37 +267,29 @@
     - text: Группа 1 (теория)
       href: https://official.contest.yandex.ru/contest/92225/enter/
 
-# - title: Приближенное решение задач
-#   number: 16
-#   description: Приближенное решение задач
-#   material: /lectures/approx_math/notes.html
+- title: Приближенное решение задач
+  number: 17
+  description: Нули функции методом половинного деления, экстремумы функции методом половинного деления, площадь под графиком методом трапеций
+  material: /lectures/approx_math/notes.html
+  presentation: /lectures/approx_math/presentation.pdf
 
-# - title: Геометрия -- 1
-#   number: 17
-#   description: Геометрия -- 1
-#   material: /lectures/geometry_1/notes.html
+- title: Геометрия -- 1
+  number: 18
+  description: Геометрия -- 1
 
-# - title: Геометрия -- 2
-#   number: 18
-#   description: Геометрия -- 2
-#   material: /lectures/geometry_2/notes.html
+- title: Геометрия -- 2
+  number: 19
+  description: Геометрия -- 2
 
-# - title: Бинарный поиск
-#   number: 18
-#   description: Бинарный поиск
-#   material: /lectures/binary_search/notes.html
+- title: Бинарный поиск
+  number: 20
+  description: Бинарный поиск
+
+- title: (Бонус) Стек
+  number: 21
+  description: (Бонус) Стек
 
 # - title: Двумерные массивы
 #   number: 19
 #   description: Двумерные массивы
 #   material: /lectures/two_dim_arrays/notes.html
-
-# - title: Алгоритмы сортировки
-#   number: 20
-#   description: Алгоритмы сортировки
-#   material: /lectures/sorting_algorithms/notes.html
-
-# - title: (Бонус) Стек
-#   number: 21
-#   description: (Бонус) Стек
-#   material: /lectures/stack/notes.html
