@@ -245,7 +245,7 @@
 
 - title: Алгоритмы сортировки
   number: 16
-  description: Приближенное решение задач
+  description: "Оптимальная оценка сложности алгоритмов сортировки. Сортировка пузырьком, сортировка вставками, сортировка слиянием."
   material: /lectures/sorting_algorithms/notes.html
   presentation: /lectures/sorting_algorithms/presentation.pdf
   quiz:
@@ -263,9 +263,24 @@
   practice:
     - text: Группа 1 (практика)
       href: https://official.contest.yandex.ru/contest/92224/enter/
+    - text: Группа 3 (практика)
+      href: https://official.contest.yandex.ru/contest/92347/enter/
+    - text: Группа 4 (практика)
+      href: https://official.contest.yandex.ru/contest/92349/enter/
+    - text: Группа 5 (практика)
+      href: https://official.contest.yandex.ru/contest/92414/enter/
   quiz:
-    - text: Группа 1 (теория)
-      href: https://official.contest.yandex.ru/contest/92225/enter/
+      - text: Группа 1 (теория)
+        href: https://official.contest.yandex.ru/contest/92225/enter/
+      - text: Группа 3 (теория)
+        href: https://official.contest.yandex.ru/contest/92346/enter/
+      - text: Группа 4 (теория)
+        href: https://official.contest.yandex.ru/contest/92348/enter/
+      - text: Группа 5 (теория)
+        href: https://official.contest.yandex.ru/contest/92415/enter/
+
+- title: Резерв контрольной работы — 3
+  description: Резервный срок контрольной работы за третий модуль.
 
 - title: Приближенное решение задач
   number: 17
@@ -285,9 +300,9 @@
   number: 20
   description: Бинарный поиск
 
-- title: (Бонус) Стек
+- title: Стек
   number: 21
-  description: (Бонус) Стек
+  description: Стек
 
 # - title: Двумерные массивы
 #   number: 19

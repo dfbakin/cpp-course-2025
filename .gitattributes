@@ -2,3 +2,4 @@
 * text=auto
 
 private/assessments/** filter=git-crypt diff=git-crypt
+**/*.quiz.md filter=git-crypt diff=git-crypt

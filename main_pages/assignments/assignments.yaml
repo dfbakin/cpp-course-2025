@@ -218,7 +218,7 @@
       href: https://official.contest.yandex.ru/contest/90607/enter/
       deadline: 2026-03-22T23:59:59
 
-- title: "Строки — 3"
+- title: "Строки — 3. Генерация последовательностей"
   number: 13
   links:
     - text: Группа 1
@@ -233,3 +233,19 @@
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/91397/enter/
       deadline: 2026-04-05T23:59:59
+
+- title: "Численные методы"
+  number: 14
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/92413/enter/
+      deadline: 2026-04-19T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/92413/enter/
+      deadline: 2026-04-19T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/92413/enter/
+      deadline: 2026-04-19T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/92413/enter/
+      deadline: 2026-04-19T23:59:59
