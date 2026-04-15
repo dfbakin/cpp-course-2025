@@ -290,10 +290,18 @@
   quiz:
     - text: Группа 1
       href: https://quizmd.dfbakin.com/quiz/sfl7Lt1z
+    - text: Группа 3
+      href: https://quizmd.dfbakin.com/quiz/wWle8zgu
+    - text: Группа 4
+      href: https://quizmd.dfbakin.com/quiz/OdaH4ukx
+    - text: Группа 5
+      href: https://quizmd.dfbakin.com/quiz/UWSS0XIB
 
 - title: Геометрия -- 1
   number: 18
   description: Геометрия -- 1
+  material: /lectures/geometry_1/notes.html
+  presentation: /lectures/geometry_1/presentation.pdf
 
 - title: Геометрия -- 2
   number: 19
@@ -302,6 +310,8 @@
 - title: Бинарный поиск
   number: 20
   description: Бинарный поиск
+  material: /lectures/binary_search/notes.html
+  presentation: /lectures/binary_search/presentation.pdf
 
 - title: Стек
   number: 21
