@@ -239,13 +239,32 @@
   links:
     - text: Группа 1
       href: https://official.contest.yandex.ru/contest/92413/enter/
-      deadline: 2026-04-19T23:59:59
+      deadline: 2026-04-26T23:59:59
     - text: Группа 3
       href: https://official.contest.yandex.ru/contest/92413/enter/
-      deadline: 2026-04-19T23:59:59
+      deadline: 2026-04-26T23:59:59
     - text: Группа 4
       href: https://official.contest.yandex.ru/contest/92413/enter/
-      deadline: 2026-04-19T23:59:59
+      deadline: 2026-04-26T23:59:59
     - text: Группа 5
       href: https://official.contest.yandex.ru/contest/92413/enter/
-      deadline: 2026-04-19T23:59:59
+      deadline: 2026-04-26T23:59:59
+  updates:
+    - text: "Дедлайн отложен на неделю"
+      time: "2026-04-17T22:02:00"
+
+- title: "Геометрия — 1"
+  number: 15
+  links:
+    - text: Группа 1
+      href: https://official.contest.yandex.ru/contest/93620/enter/
+      deadline: 2026-05-13T23:59:59
+    - text: Группа 3
+      href: https://official.contest.yandex.ru/contest/93620/enter/
+      deadline: 2026-05-13T23:59:59
+    - text: Группа 4
+      href: https://official.contest.yandex.ru/contest/93620/enter/
+      deadline: 2026-05-13T23:59:59
+    - text: Группа 5
+      href: https://official.contest.yandex.ru/contest/93620/enter/
+      deadline: 2026-05-13T23:59:59
