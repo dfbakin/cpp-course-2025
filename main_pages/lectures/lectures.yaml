@@ -299,17 +299,41 @@
 
 - title: Геометрия -- 1
   number: 18
-  description: Геометрия -- 1
+  description: Точки, векторы, отрезки, лучи и прямые на плоскости. Скалярное и векторное произведения.
+    Расстояния, проверки принадлежности точки. Пересечения. Проекция точки на прямую
   material: /lectures/geometry_1/notes.html
   presentation: /lectures/geometry_1/presentation.pdf
+  quiz:
+    - text: Группа 1
+      href: https://quizmd.dfbakin.com/quiz/x7hIyPkv
+    - text: Группа 3
+      href: https://quizmd.dfbakin.com/quiz/66G0b2pU
+    - text: Группа 4
+      href: https://quizmd.dfbakin.com/quiz/hDHpcbUa
+    - text: Группа 5
+      href: https://quizmd.dfbakin.com/quiz/do4tgtAw
 
 - title: Геометрия -- 2
   number: 19
-  description: Геометрия -- 2
+  description: Многоугольники и их типы.
+    Площадь многоугольника. Принадлежность точки многоугольнику, проверка выпуклости. 
+    Формула Пика, выпуклая оболочка
+  material: /lectures/geometry_2/notes.html
+  presentation: /lectures/geometry_2/presentation.pdf
+  quiz:
+    - text: Группа 1
+      href: https://quizmd.dfbakin.com/quiz/TM-K4hP1
+    - text: Группа 3
+      href: https://quizmd.dfbakin.com/quiz/XBKJ7KdS
+    - text: Группа 4
+      href: https://quizmd.dfbakin.com/quiz/kx6b06Fn
+    - text: Группа 5
+      href: https://quizmd.dfbakin.com/quiz/sV57zt0b
 
 - title: Бинарный поиск
   number: 20
-  description: Бинарный поиск
+  description: Бинарный поиск в отсортированном массиве. 
+    Бинарный поиск по ответу. Вещественный бинпоиск
   material: /lectures/binary_search/notes.html
   presentation: /lectures/binary_search/presentation.pdf
 
